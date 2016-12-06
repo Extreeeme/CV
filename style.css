@@ -1,4 +1,153 @@
+@font-face {
+    font-family: 'MaPolice';
+    src: url('sensation.ttf');
+}
+
 body
 {
-	
+	background-image: url(Images/fond.jpg);
+	background-size: cover;
+	font-family: "MaPolice", Helvetica,sans-serif;
+}
+
+/*BARRE DE NAVIGUATION*/
+
+nav
+{
+	display: inline-block;
+}
+
+nav ul
+{
+	list-style-type: none;
+}
+
+nav li
+{
+
+}
+
+nav a
+{
+	text-decoration: none;
+	color : black;
+	width: 100%;
+	padding: 20px;
+	text-align: right;
+	display: inline-block;
+}
+
+.mv-item,
+.mv-item a {
+  /* les liens et item deviennent des blocs */
+  /* suffit théoriquement à virer les puces de liste */
+  display: block;
+}
+
+.mv-item a {
+  padding: 10px 10px;
+  margin:0px;
+  margin-left: -20px;
+  color: #666;
+  background: #FFF;
+
+  /* on définit la transition pour les navigateurs */
+  -webkit-transition: all .3s; /* Chrome/Safari */
+  -moz-transition: all .3s; /* Firefox (plus trop nécessaire) */
+  transition: all .3s; /* syntaxe officielle */
+}
+
+/* styles changeants au survol et focus */
+.mv-item a:hover,
+.mv-item a:focus {
+  background: #828282;
+  color: #FFF;
+  margin:0px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.cote
+{
+	width: 20%;
+	border : white 1px solid;
+	background-color: white;
+	border-width: 0px;
+	box-shadow: 1px 1px 7px black;
+	margin: 20px;
+	display: inline-block;
+
+}
+
+.chat
+{
+	width: 100%;
+}
+
+.contact
+{
+	margin-top : 40%;
+	width: 100%;
+	text-align: center;
+}
+
+.facebook
+{
+	width: 20%;
+	display: inline-block;
+	margin-left: 30px;
+	margin-bottom: 10px;
+}
+
+.twitter
+{
+	width: 20%;
+	display: inline-block;
+	margin-left: 20px;
+	margin-bottom: 10px;
+}
+
+.google
+{
+	width: 20%;
+	display: inline-block;
+	margin-left: 20px;
+	margin-bottom: 10px;
+}
+
+.intro
+{
+	display: inline-block;
+	margin-right: 27%;
+	margin-top: 30%;
+	float: right;
+	color: white;
+	font-size: 40px;
+}
+
+.intro2
+{
+display: inline-block;
+float: right;
+margin-right: 55%;
+margin-top: -18%;
+color :#828282 ;
+font-size: 20px;
+font-weight: bolder;
+}
+
+.dl
+{
+	display: inline-block;
+	margin-right: 60%;
+	float: right;
+	margin-top: -10%;
+	border : 1px white solid;
+	border-radius: 30px;
+	background-color: white;
+	padding :20px;
+	text-decoration: none;
+	color: black;
 }
