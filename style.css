@@ -26,7 +26,8 @@ html, body {margin:0}
 	background-color: #828282;
 	height: 100%;
 	width: 100%;
-	padding-top: 105%;
+	display: inline-block;
+	margin-top: 50%;
 
 }
 /*BARRE DE NAVIGUATION*/
@@ -97,6 +98,7 @@ nav a
 	box-shadow: 1px 1px 7px black;
 	margin: 20px;
 	display: inline-block;
+	position: fixed;
 
 }
 
@@ -117,7 +119,7 @@ nav a
 	width: 20%;
 	display: inline-block;
 	margin-left: 30px;
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 }
 
 .twitter
@@ -125,7 +127,7 @@ nav a
 	width: 20%;
 	display: inline-block;
 	margin-left: 20px;
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 }
 
 .google
@@ -133,7 +135,7 @@ nav a
 	width: 20%;
 	display: inline-block;
 	margin-left: 20px;
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 }
 
 .intro
@@ -151,7 +153,7 @@ nav a
 display: inline-block;
 float: right;
 margin-right: 55%;
-margin-top: -18%;
+margin-top: -2%;
 color :#828282 ;
 font-size: 20px;
 font-weight: bolder;
@@ -162,7 +164,7 @@ font-weight: bolder;
 	display: inline-block;
 	margin-right: 60%;
 	float: right;
-	margin-top: -10%;
+	margin-top: 1%;
 	border : 1px white solid;
 	border-radius: 30px;
 	background-color: white;
@@ -171,3 +173,21 @@ font-weight: bolder;
 	color: black;
 }
 
+/*DEUXIEME PAGE*/
+
+.titrePres
+{
+	font-size: 35px;
+	color: white;
+	display: inline-block;
+	margin-left: 25%;
+	margin-top: 80px;
+
+}
+
+.paragraphePres
+{
+	color: white;
+	display: inline-block;
+	margin-left: 25%;
+}
