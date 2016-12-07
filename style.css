@@ -18,17 +18,27 @@ html, body {margin:0}
 	top: 0; left: 0;
 	width: 100%;
 	height: 100%;
+	display: inline-block;
 }
 
 .deuxieme
 {
 
 	background-color: #102331;
-	height: 100%;
+	height: 651px;
 	width: 100%;
 	display: inline-block;
 	margin-top: 50%;
 
+}
+
+.troisieme
+{
+
+	background-color: #271a0d;
+	height: 650px;
+	width: 100%;
+	display: inline-block;
 }
 /*BARRE DE NAVIGUATION*/
 
@@ -230,6 +240,120 @@ font-weight: bolder;
     display: block;
     position: absolute;
     width: 280px;
+    height: 24px;
+    overflow: hidden;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    transform: skewX(-30deg);
+    -webkit-transform: skewX(-30deg);
+    -moz-transform: skewX(-30deg);
+    -o-transform: skewX(-30deg);
+    font: bold 120px/80px sans-serif;
+    letter-spacing: -6px;
+    color: #000;
+    opacity: 0.06;
+}
+
+.blue:before { 
+  background: #white;
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(white), to(white));
+  background: -moz-linear-gradient(top, #099, #006A6B);
+}
+
+.progress-bar2 { 
+    width: 300px;
+    height: 15px;
+    padding: 4px;
+    margin-left: 25%;
+    margin-bottom: 20px;
+    margin-top: 0px;
+    background-color: #191919;
+    border-radius: 16px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    box-shadow: inset 0 1px 2px #000, 0 1px 0 #2b2b2b;
+    -webkit-box-shadow: inset 0 1px 2px #000, 0 1px 0 #2b2b2b;
+    -moz-box-shadow: inset 0 1px 2px #000, 0 1px 0 #2b2b2b;
+}
+
+.progress-bar2:before { 
+    content: '';
+    display: block;
+    position: absolute;
+    width: 210px;
+    height: 16px;
+    background: #999;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), inset 0 -1px 3px rgba(0, 0, 0, 0.4), 0 1px 1px #000;
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), inset 0 -1px 3px rgba(0, 0, 0, 0.4), 0 1px 1px #000;
+    -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), inset 0 -1px 3px rgba(0, 0, 0, 0.4), 0 1px 1px #000;
+}
+
+.progress-bar2:after { 
+    content: '|||||||||||||';
+    display: block;
+    position: absolute;
+    width: 210px;
+    height: 24px;
+    overflow: hidden;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    transform: skewX(-30deg);
+    -webkit-transform: skewX(-30deg);
+    -moz-transform: skewX(-30deg);
+    -o-transform: skewX(-30deg);
+    font: bold 120px/80px sans-serif;
+    letter-spacing: -6px;
+    color: #000;
+    opacity: 0.06;
+}
+
+.blue:before { 
+  background: #white;
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(white), to(white));
+  background: -moz-linear-gradient(top, #099, #006A6B);
+}
+
+.progress-bar3 { 
+    width: 300px;
+    height: 15px;
+    padding: 4px;
+    margin-left: 25%;
+    margin-bottom: 20px;
+    margin-top: 0px;
+    background-color: #191919;
+    border-radius: 16px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    box-shadow: inset 0 1px 2px #000, 0 1px 0 #2b2b2b;
+    -webkit-box-shadow: inset 0 1px 2px #000, 0 1px 0 #2b2b2b;
+    -moz-box-shadow: inset 0 1px 2px #000, 0 1px 0 #2b2b2b;
+}
+
+.progress-bar3:before { 
+    content: '';
+    display: block;
+    position: absolute;
+    width: 20px;
+    height: 16px;
+    background: #999;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), inset 0 -1px 3px rgba(0, 0, 0, 0.4), 0 1px 1px #000;
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), inset 0 -1px 3px rgba(0, 0, 0, 0.4), 0 1px 1px #000;
+    -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), inset 0 -1px 3px rgba(0, 0, 0, 0.4), 0 1px 1px #000;
+}
+
+.progress-bar3:after { 
+    content: '|||||||||||||';
+    display: block;
+    position: absolute;
+    width: 20px;
     height: 24px;
     overflow: hidden;
     border-radius: 12px;
