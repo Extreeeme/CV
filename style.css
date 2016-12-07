@@ -23,7 +23,7 @@ html, body {margin:0}
 .deuxieme
 {
 
-	background-color: #828282;
+	background-color: #102331;
 	height: 100%;
 	width: 100%;
 	display: inline-block;
@@ -191,4 +191,62 @@ font-weight: bolder;
 	color: white;
 	display: inline-block;
 	margin-left: 25%;
+}
+
+
+.progress-bar { 
+    width: 300px;
+    height: 15px;
+    padding: 4px;
+    margin-left: 25%;
+    margin-bottom: 20px;
+    margin-top: 0px;
+    background-color: #191919;
+    border-radius: 16px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    box-shadow: inset 0 1px 2px #000, 0 1px 0 #2b2b2b;
+    -webkit-box-shadow: inset 0 1px 2px #000, 0 1px 0 #2b2b2b;
+    -moz-box-shadow: inset 0 1px 2px #000, 0 1px 0 #2b2b2b;
+}
+
+.progress-bar:before { 
+    content: '';
+    display: block;
+    position: absolute;
+    width: 280px;
+    height: 16px;
+    background: #999;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), inset 0 -1px 3px rgba(0, 0, 0, 0.4), 0 1px 1px #000;
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), inset 0 -1px 3px rgba(0, 0, 0, 0.4), 0 1px 1px #000;
+    -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), inset 0 -1px 3px rgba(0, 0, 0, 0.4), 0 1px 1px #000;
+}
+
+.progress-bar:after { 
+    content: '|||||||||||||';
+    display: block;
+    position: absolute;
+    width: 280px;
+    height: 24px;
+    overflow: hidden;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    transform: skewX(-30deg);
+    -webkit-transform: skewX(-30deg);
+    -moz-transform: skewX(-30deg);
+    -o-transform: skewX(-30deg);
+    font: bold 120px/80px sans-serif;
+    letter-spacing: -6px;
+    color: #000;
+    opacity: 0.06;
+}
+
+.blue:before { 
+  background: #white;
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(white), to(white));
+  background: -moz-linear-gradient(top, #099, #006A6B);
 }
