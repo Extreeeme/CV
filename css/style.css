@@ -273,7 +273,7 @@ a:focus {
 ---------------------------- PC -----------------------*/
 
 
-@media screen and (min-width: 750px){
+@media screen and (min-device-width: 750px){
 
 /* ---------------------- PAGE 1 ---------------------- */
 
