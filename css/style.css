@@ -266,6 +266,31 @@ a:focus {
     to { width: 50% }
 }
 
+/* ---------------------- PAGE 4 ---------------------- */
+
+#page4{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #00766D;
+    height: 100vh;
+    color: white;
+    align-items: flex-start;
+
+}
+
+#mail{
+    color: white;
+    width: 100%;
+}
+
+#logo{
+    display: flex;
+}
+img{
+    width: 20%;
+
+}
 /* ------------------------- PC -----------------------
 ---------------------------- PC -----------------------
 ---------------------------- PC -----------------------
@@ -324,6 +349,65 @@ nav{
     flex-direction: column;
 }
 
+#motivation{
+    color: white;
+    font-size: 1em;
+    width: 60%;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+  #texte2{
+    color: white;
+    width: 80%;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1em;
+}
+
+.progressbar {
+    width: 50%;
+    height: 2vh;
+    background-color: #191919;
+    padding: 2px;
+    margin: .6em 0;
+    margin-left: 25%;
+    border: 1px #000 double;
+    border-radius: 30px;
+    clear: both;
+    margin-left: 5%;
+}
+
+.progress {
+    background: #acacac; /*-Couleur de la barre */
+    height: 2vh;
+    width: 0%;
+    max-width: 100%;
+    float: left;
+    -webkit-animation: progress 2s 1 forwards;
+    -moz-animation: progress 2s 1 forwards;
+    -ms-animation: progress 2s 1 forwards;
+    animation: progress 2s 1 forwards;
+    border-radius: 30px;
+}
+
+.pbaranim {
+    height: 2vh;
+    width: 100%;
+    overflow: hidden;
+    background: url('http://www.cssdeck.com/uploads/media/items/7/7uo1osj.gif') repeat-x;
+    background-size: cover;
+    -moz-opacity: 0.25;
+    -khtml-opacity: 0.25;
+    opacity: 0.25;
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=25);
+    filter: progid:DXImageTransform.Microsoft.Alpha(opacity=25);
+    filter: alpha(opacity=25);
+    border-radius: 30px;
+}
+
+
 /* ---------------------- PAGE 3 ---------------------- */
 
 #page3{
@@ -332,6 +416,54 @@ nav{
     margin-left:15%;
     height: 100vh;
     color: white;
+}
+
+.progressbar2 {
+    width: 50%;
+    height: 2vh;
+    background-color: #191919;
+    padding: 2px;
+    margin: .6em 0;
+    margin-left: 25%;
+    border: 1px #000 double;
+    border-radius: 30px;
+    clear: both;
+    margin-left: 5%;
+}
+
+.progress2 {
+    background: #acacac; /*-Couleur de la barre */
+    height: 2vh;
+    width: 0%;
+    max-width: 100%;
+    float: left;
+    -webkit-animation: progress2 2s 1 forwards;
+    -moz-animation: progress2 2s 1 forwards;
+    -ms-animation: progress2 2s 1 forwards;
+    animation: progress2 2s 1 forwards;
+    border-radius: 30px;
+}
+
+.pbaranim2 {
+    height: 2vh;
+    width: 100%;
+    overflow: hidden;
+    background: url('http://www.cssdeck.com/uploads/media/items/7/7uo1osj.gif') repeat-x;
+    background-size: cover;
+    -moz-opacity: 0.25;
+    -khtml-opacity: 0.25;
+    opacity: 0.25;
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=25);
+    filter: progid:DXImageTransform.Microsoft.Alpha(opacity=25);
+    filter: alpha(opacity=25);
+    border-radius: 30px;
+}
+
+#code{
+    width: 30%;
+    margin-left: 5%;
+    margin-top: 5%;
+    font-size: 2em;
 }
 
 
