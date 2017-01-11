@@ -1,24 +1,24 @@
 /* ---------------------- PARAMETRES GLOBAUX ---------------------- */
 *{
     padding: 0px;
-    margin: 0px;
+    margin : 0px;
 }
 @font-face {
     font-family: 'MaPolice';
-    src: url("../polices/sensation.ttf");
+    src        : url("../polices/sensation.ttf");
 }
 
 body {
-    padding: 0px;
-    margin: 0px;
-    font-family: 'MaPolice', Helvetica,sans-serif;
+    padding        : 0px;
+    margin         : 0px;
+    font-family    : 'MaPolice', Helvetica,sans-serif;
     text-decoration: none;
 }
 
 #container{
-    display: flex;
+    display  : flex;
     flex-wrap: wrap;
-    width: 100%;
+    width    : 100%;
 }
 
 
@@ -26,65 +26,64 @@ body {
 /* ---------------------- PAGE 1 ---------------------- */
 
 #page1{
-    width: 100%;
-    display: flex;
+    width    : 100%;
+    display  : flex;
     flex-wrap: wrap;
 }
 
 nav{
     background-color: white;
-    width: 100%;
-    height: 10vh;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    font-size: 1.5em;
-    flex-wrap: wrap;
-    border : white 1px solid;
-    border-width: 0px;
-    box-shadow: 1px 1px 7px black;
+    opacity         : 0.3;
+    border          : white 1px solid;
+    border-width    : 0px;
+    box-shadow      : 1px 1px 7px black;
+    padding-right   : 10px;
 }
 
 a{
-    color : black;
+    color          : black;
     text-decoration: none;
+    border         : 1px #EFEFEF solid;
+    border-radius  : 10px;
+    padding        : 10px;
+    width          : 80%;
+    text-align     : right;
+    margin-top     : 20px;
+    margin-bottom  : 20px;
 
-  /* on dÃ©finit la transition pour les navigateurs */
+  /* on définit la transition pour les navigateurs */
   -webkit-transition: all .3s; /* Chrome/Safari */
-  -moz-transition: all .3s; /* Firefox (plus trop nÃ©cessaire) */
-  transition: all .3s; /* syntaxe officielle */
+  -moz-transition   : all .3s; /* Firefox (plus trop nécessaire) */
+  transition        : all .3s; /* syntaxe officielle */
 }
 
 /* styles changeants au survol et focus */
 a:hover,
 a:focus {
-  background: #828282;
-  color: #FFF;
-  margin:0px;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  background    : #828282;
+  color         : #FFF;
+  padding-left  : 16px;
+  padding-right : 20px;
 }
 
 #intro{
-    width: 100%;
-    height: 90vh;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
+    width           : 100%;
+    height          : 90vh;
+    display         : flex;
+    flex-wrap       : wrap;
+    flex-direction  : column;
+    justify-content : center;
     background-image: url(../img/fond.jpg);
-    background-size: cover;
+    background-size : cover;
 }
 
 #bonjour{
-    color: white;
+    color    : white;
     font-size: 3em;
 }
 
 #bonjour2{
-    color: grey;
+    color    : grey;
     font-size: 2em;
 }
 
@@ -92,71 +91,71 @@ a:focus {
 
 #page2{
     background-color: #102331;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
+    width           : 100%;
+    height          : 100vh;
+    display         : flex;
+    flex-wrap       : wrap;
+    flex-direction  : column;
 }
 
 #motivation{
-    color: white;
-    font-size: 2em;
-    width: 60%;
+    color      : white;
+    font-size  : 2em;
+    width      : 60%;
     margin-left: 5%;
-    margin-top: 5%;
+    margin-top : 5%;
 }
 
   #texte2{
-    color: white;
-    width: 80%;
-    flex-wrap: wrap;
-    margin-left: auto;
+    color       : white;
+    width       : 80%;
+    flex-wrap   : wrap;
+    margin-left : auto;
     margin-right: auto;
-    font-size: 1.6em;
+    font-size   : 1.6em;
 }
 
 /* PROGRESS BAR */
 
 .progressbar {
-    width: 50%;
-    height: 3vh;
+    width           : 50%;
+    height          : 3vh;
     background-color: #191919;
-    padding: 2px;
-    margin: .6em 0;
-    margin-left: 25%;
-    border: 1px #000 double;
-    border-radius: 30px;
-    clear: both;
-    margin-left: 5%;
+    padding         : 2px;
+    margin          : .6em 0;
+    margin-left     : 25%;
+    border          : 1px #000 double;
+    border-radius   : 30px;
+    clear           : both;
+    margin-left     : 5%;
 }
 
 .progress {
-    background: #acacac; /*-Couleur de la barre */
-    height: 3vh;
-    width: 0%;
-    max-width: 100%;
-    float: left;
+    background       : #acacac; /*-Couleur de la barre */
+    height           : 3vh;
+    width            : 0%;
+    max-width        : 100%;
+    float            : left;
     -webkit-animation: progress 2s 1 forwards;
-    -moz-animation: progress 2s 1 forwards;
-    -ms-animation: progress 2s 1 forwards;
-    animation: progress 2s 1 forwards;
-    border-radius: 30px;
+    -moz-animation   : progress 2s 1 forwards;
+    -ms-animation    : progress 2s 1 forwards;
+    animation        : progress 2s 1 forwards;
+    border-radius    : 30px;
 }
 
 .pbaranim {
-    height: 3vh;
-    width: 100%;
-    overflow: hidden;
-    background: url('http://www.cssdeck.com/uploads/media/items/7/7uo1osj.gif') repeat-x;
+    height         : 3vh;
+    width          : 100%;
+    overflow       : hidden;
+    background     : url('http://www.cssdeck.com/uploads/media/items/7/7uo1osj.gif') repeat-x;
     background-size: cover;
-    -moz-opacity: 0.25;
-    -khtml-opacity: 0.25;
-    opacity: 0.25;
-    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=25);
-    filter: progid:DXImageTransform.Microsoft.Alpha(opacity=25);
-    filter: alpha(opacity=25);
-    border-radius: 30px;
+    -moz-opacity   : 0.25;
+    -khtml-opacity : 0.25;
+    opacity        : 0.25;
+    -ms-filter     : progid:DXImageTransform.Microsoft.Alpha(Opacity=25);
+    filter         : progid:DXImageTransform.Microsoft.Alpha(opacity=25);
+    filter         : alpha(opacity=25);
+    border-radius  : 30px;
 }
 
 @-webkit-keyframes progress { 
@@ -187,59 +186,59 @@ a:focus {
 
 #page3{
     background-color: #271a0d;
-    width: 100%;
-    height: 100vh;
-    color: white;
+    width           : 100%;
+    height          : 100vh;
+    color           : white;
 }
 
 #code{
-    width: 30%;
+    width      : 30%;
     margin-left: 5%;
-    margin-top: 5%;
-    font-size: 3em;
+    margin-top : 5%;
+    font-size  : 3em;
 }
 
 /* PROGRESS BAR */
 
 .progressbar2 {
-    width: 50%;
-    height: 3vh;
+    width           : 50%;
+    height          : 3vh;
     background-color: #191919;
-    padding: 2px;
-    margin: .6em 0;
-    margin-left: 25%;
-    border: 1px #000 double;
-    border-radius: 30px;
-    clear: both;
-    margin-left: 5%;
+    padding         : 2px;
+    margin          : .6em 0;
+    margin-left     : 25%;
+    border          : 1px #000 double;
+    border-radius   : 30px;
+    clear           : both;
+    margin-left     : 5%;
 }
 
 .progress2 {
-    background: #acacac; /*-Couleur de la barre */
-    height: 3vh;
-    width: 0%;
-    max-width: 100%;
-    float: left;
+    background       : #acacac; /*-Couleur de la barre */
+    height           : 3vh;
+    width            : 0%;
+    max-width        : 100%;
+    float            : left;
     -webkit-animation: progress2 2s 1 forwards;
-    -moz-animation: progress2 2s 1 forwards;
-    -ms-animation: progress2 2s 1 forwards;
-    animation: progress2 2s 1 forwards;
-    border-radius: 30px;
+    -moz-animation   : progress2 2s 1 forwards;
+    -ms-animation    : progress2 2s 1 forwards;
+    animation        : progress2 2s 1 forwards;
+    border-radius    : 30px;
 }
 
 .pbaranim2 {
-    height: 3vh;
-    width: 100%;
-    overflow: hidden;
-    background: url('http://www.cssdeck.com/uploads/media/items/7/7uo1osj.gif') repeat-x;
+    height         : 3vh;
+    width          : 100%;
+    overflow       : hidden;
+    background     : url('http://www.cssdeck.com/uploads/media/items/7/7uo1osj.gif') repeat-x;
     background-size: cover;
-    -moz-opacity: 0.25;
-    -khtml-opacity: 0.25;
-    opacity: 0.25;
-    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=25);
-    filter: progid:DXImageTransform.Microsoft.Alpha(opacity=25);
-    filter: alpha(opacity=25);
-    border-radius: 30px;
+    -moz-opacity   : 0.25;
+    -khtml-opacity : 0.25;
+    opacity        : 0.25;
+    -ms-filter     : progid:DXImageTransform.Microsoft.Alpha(Opacity=25);
+    filter         : progid:DXImageTransform.Microsoft.Alpha(opacity=25);
+    filter         : alpha(opacity=25);
+    border-radius  : 30px;
 }
 
 @-webkit-keyframes progress2 { 
@@ -269,13 +268,13 @@ a:focus {
 /* ---------------------- PAGE 4 ---------------------- */
 
 #page4{
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
+    width           : 100%;
+    display         : flex;
+    flex-wrap       : wrap;
     background-color: #00766D;
-    height: 100vh;
-    color: white;
-    align-items: flex-start;
+    height          : 100vh;
+    color           : white;
+    align-items     : flex-start;
 
 }
 
@@ -304,107 +303,106 @@ img{
 
 nav{
     background-color: white;
-    width: 15%;
-    height: 100vh;
-    display: flex;
-    font-size: 1.5em;
-    flex-wrap: wrap;
-    position: fixed;
-    flex-direction: column;
+    width           : 15%;
+    height          : 100vh;
+    display         : flex;
+    font-size       : 1.5em;
+    flex-wrap       : wrap;
+    position        : fixed;
+    flex-direction  : column;
+    align-items     : flex-end;
 }
 
 #intro{
-    width: 85%;
-    margin-left:15%;
-    height: 100vh;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
+    width           : 100%;
+    height          : 100vh;
+    display         : flex;
+    flex-wrap       : wrap;
+    flex-direction  : column;
+    justify-content : center;
     background-image: url(../img/fond.jpg);
-    background-size: cover;
+    background-size : cover;
 }
 
 #bonjour{
-    color: white;
-    font-size: 3em;
-    margin-left: 5%;
+    color      : white;
+    font-size  : 3em;
+    margin-left:20%;
 }
 
 #bonjour2{
-    color: grey;
-    font-size: 2em;
-    margin-left: 5%;
+    color      : grey;
+    font-size  : 2em;
+    margin-left:20%;
 }
 
 /* ---------------------- PAGE 2 ---------------------- */
 
 #page2{
     background-color: #102331;
-    width: 85%;
-    margin-left:15%;
-    height: 100vh;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
+    width           : 100%;
+    height          : 100vh;
+    display         : flex;
+    flex-wrap       : wrap;
+    flex-direction  : column;
 }
 
 #motivation{
-    color: white;
-    font-size: 1em;
-    width: 60%;
-    margin-left: 5%;
-    margin-top: 5%;
+    color      : white;
+    font-size  : 1em;
+    width      : 60%;
+    margin-left: 20%;
+    margin-top : 5%;
 }
 
   #texte2{
-    color: white;
-    width: 80%;
-    flex-wrap: wrap;
-    margin-left: auto;
+    color       : white;
+    width       : 80%;
+    flex-wrap   : wrap;
+    margin-left : 20%;
     margin-right: auto;
-    font-size: 1em;
+    font-size   : 1em;
 }
 
 .progressbar {
-    width: 50%;
-    height: 2vh;
+    width           : 50%;
+    height          : 2vh;
     background-color: #191919;
-    padding: 2px;
-    margin: .6em 0;
-    margin-left: 25%;
-    border: 1px #000 double;
-    border-radius: 30px;
-    clear: both;
-    margin-left: 5%;
+    padding         : 2px;
+    margin          : .6em 0;
+    margin-left     : 20%;
+    border          : 1px #000 double;
+    border-radius   : 30px;
+    clear           : both;
+
 }
 
 .progress {
-    background: #acacac; /*-Couleur de la barre */
-    height: 2vh;
-    width: 0%;
-    max-width: 100%;
-    float: left;
+    background       : #acacac; /*-Couleur de la barre */
+    height           : 2vh;
+    width            : 0%;
+    max-width        : 100%;
+    float            : left;
     -webkit-animation: progress 2s 1 forwards;
-    -moz-animation: progress 2s 1 forwards;
-    -ms-animation: progress 2s 1 forwards;
-    animation: progress 2s 1 forwards;
-    border-radius: 30px;
+    -moz-animation   : progress 2s 1 forwards;
+    -ms-animation    : progress 2s 1 forwards;
+    animation        : progress 2s 1 forwards;
+    border-radius    : 30px;
 }
 
 .pbaranim {
-    height: 2vh;
-    width: 100%;
-    overflow: hidden;
-    background: url('http://www.cssdeck.com/uploads/media/items/7/7uo1osj.gif') repeat-x;
+    height         : 2vh;
+    width          : 100%;
+    overflow       : hidden;
+    background     : url('http://www.cssdeck.com/uploads/media/items/7/7uo1osj.gif') repeat-x;
     background-size: cover;
-    -moz-opacity: 0.25;
-    -khtml-opacity: 0.25;
-    opacity: 0.25;
-    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=25);
-    filter: progid:DXImageTransform.Microsoft.Alpha(opacity=25);
-    filter: alpha(opacity=25);
-    border-radius: 30px;
+    -moz-opacity   : 0.25;
+    -khtml-opacity : 0.25;
+    opacity        : 0.25;
+    -ms-filter     : progid:DXImageTransform.Microsoft.Alpha(Opacity=25);
+    filter         : progid:DXImageTransform.Microsoft.Alpha(opacity=25);
+    filter         : alpha(opacity=25);
+    border-radius  : 30px;
 }
 
 
@@ -412,58 +410,58 @@ nav{
 
 #page3{
     background-color: #271a0d;
-    width: 85%;
-    margin-left:15%;
-    height: 100vh;
-    color: white;
+    width           : 85%;
+    margin-left     :15%;
+    height          : 100vh;
+    color           : white;
 }
 
 .progressbar2 {
-    width: 50%;
-    height: 2vh;
+    width           : 50%;
+    height          : 2vh;
     background-color: #191919;
-    padding: 2px;
-    margin: .6em 0;
-    margin-left: 25%;
-    border: 1px #000 double;
-    border-radius: 30px;
-    clear: both;
-    margin-left: 5%;
+    padding         : 2px;
+    margin          : .6em 0;
+    margin-left     : 25%;
+    border          : 1px #000 double;
+    border-radius   : 30px;
+    clear           : both;
+    margin-left     : 5%;
 }
 
 .progress2 {
-    background: #acacac; /*-Couleur de la barre */
-    height: 2vh;
-    width: 0%;
-    max-width: 100%;
-    float: left;
+    background       : #acacac; /*-Couleur de la barre */
+    height           : 2vh;
+    width            : 0%;
+    max-width        : 100%;
+    float            : left;
     -webkit-animation: progress2 2s 1 forwards;
-    -moz-animation: progress2 2s 1 forwards;
-    -ms-animation: progress2 2s 1 forwards;
-    animation: progress2 2s 1 forwards;
-    border-radius: 30px;
+    -moz-animation   : progress2 2s 1 forwards;
+    -ms-animation    : progress2 2s 1 forwards;
+    animation        : progress2 2s 1 forwards;
+    border-radius    : 30px;
 }
 
 .pbaranim2 {
-    height: 2vh;
-    width: 100%;
-    overflow: hidden;
-    background: url('http://www.cssdeck.com/uploads/media/items/7/7uo1osj.gif') repeat-x;
+    height         : 2vh;
+    width          : 100%;
+    overflow       : hidden;
+    background     : url('http://www.cssdeck.com/uploads/media/items/7/7uo1osj.gif') repeat-x;
     background-size: cover;
-    -moz-opacity: 0.25;
-    -khtml-opacity: 0.25;
-    opacity: 0.25;
-    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=25);
-    filter: progid:DXImageTransform.Microsoft.Alpha(opacity=25);
-    filter: alpha(opacity=25);
-    border-radius: 30px;
+    -moz-opacity   : 0.25;
+    -khtml-opacity : 0.25;
+    opacity        : 0.25;
+    -ms-filter     : progid:DXImageTransform.Microsoft.Alpha(Opacity=25);
+    filter         : progid:DXImageTransform.Microsoft.Alpha(opacity=25);
+    filter         : alpha(opacity=25);
+    border-radius  : 30px;
 }
 
 #code{
-    width: 30%;
+    width      : 30%;
     margin-left: 5%;
-    margin-top: 5%;
-    font-size: 2em;
+    margin-top : 5%;
+    font-size  : 2em;
 }
 
 
