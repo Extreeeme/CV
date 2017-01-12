@@ -1,564 +1,94 @@
-/* ---------------------- PARAMETRES GLOBAUX ---------------------- */
-*{
-    padding: 0px;
+body{                    /*Réinitialisation du body */
     margin : 0px;
-}
-@font-face {
-    font-family: 'MaPolice';
-    src        : url("../polices/sensation.ttf");
+    padding: 0px;
 }
 
-body {
-    padding        : 0px;
-    margin         : 0px;
-    font-family    : 'MaPolice', Helvetica,sans-serif;
-    text-decoration: none;
-}
-
-#container{
-    display  : flex;
-    flex-wrap: wrap;
-    width    : 100%;
-}
-
-
-
-/* ---------------------- PAGE 1 ---------------------- */
-
-#page1{
-    width    : 100%;
-    display  : flex;
+#container{                 /*Div principale pour FlexBox */
+    display     : flex;
+    width       : 100%;
     flex-wrap: wrap;
 }
 
-nav{
-    background-color: white;
-    opacity         : 0.3;
-    border          : white 1px solid;
-    border-width    : 0px;
-    box-shadow      : 1px 1px 7px black;
-    padding-right   : 10px;
-}
-
-a{
-    color          : black;
-    text-decoration: none;
-    border         : 1px #EFEFEF solid;
-    border-radius  : 10px;
-    padding        : 10px;
-    width          : 80%;
-    text-align     : right;
-    margin-top     : 20px;
-    margin-bottom  : 20px;
-
-  /* on définit la transition pour les navigateurs */
-  -webkit-transition: all .3s; /* Chrome/Safari */
-  -moz-transition   : all .3s; /* Firefox (plus trop nécessaire) */
-  transition        : all .3s; /* syntaxe officielle */
-}
-
-/* styles changeants au survol et focus */
-a:hover,
-a:focus {
-  background    : #828282;
-  color         : #FFF;
-  padding-left  : 16px;
-  padding-right : 20px;
-}
-
-#page1NonHover{
-    color          : black;
-    text-decoration: none;
-    border         : 1px #EFEFEF solid;
-    border-radius  : 10px;
-    padding        : 10px;
-    width          : 80%;
-    text-align     : right;
-    margin-top     : 20px;
-    margin-bottom  : 20px;
-
-  /* on définit la transition pour les navigateurs */
-  -webkit-transition: all .3s; /* Chrome/Safari */
-  -moz-transition   : all .3s; /* Firefox (plus trop nécessaire) */
-  transition        : all .3s; /* syntaxe officielle */
-}
-
-#page2NonHover{
-    color          : black;
-    text-decoration: none;
-    border         : 1px #EFEFEF solid;
-    border-radius  : 10px;
-    padding        : 10px;
-    width          : 80%;
-    text-align     : right;
-    margin-top     : 20px;
-    margin-bottom  : 20px;
-
-  /* on définit la transition pour les navigateurs */
-  -webkit-transition: all .3s; /* Chrome/Safari */
-  -moz-transition   : all .3s; /* Firefox (plus trop nécessaire) */
-  transition        : all .3s; /* syntaxe officielle */
-}
-
-#page3NonHover{
-    color          : black;
-    text-decoration: none;
-    border         : 1px #EFEFEF solid;
-    border-radius  : 10px;
-    padding        : 10px;
-    width          : 80%;
-    text-align     : right;
-    margin-top     : 20px;
-    margin-bottom  : 20px;
-
-  /* on définit la transition pour les navigateurs */
-  -webkit-transition: all .3s; /* Chrome/Safari */
-  -moz-transition   : all .3s; /* Firefox (plus trop nécessaire) */
-  transition        : all .3s; /* syntaxe officielle */
-}
-
-#page4NonHover{
-    color          : black;
-    text-decoration: none;
-    border         : 1px #EFEFEF solid;
-    border-radius  : 10px;
-    padding        : 10px;
-    width          : 80%;
-    text-align     : right;
-    margin-top     : 20px;
-    margin-bottom  : 20px;
-
-  /* on définit la transition pour les navigateurs */
-  -webkit-transition: all .3s; /* Chrome/Safari */
-  -moz-transition   : all .3s; /* Firefox (plus trop nécessaire) */
-  transition        : all .3s; /* syntaxe officielle */
-}
-#page1Hover{
-  background    : #828282;
-  color         : #FFF;
-  padding-left  : 16px;
-  padding-right : 20px;
-}
-
-#page2Hover{
-  background    : #828282;
-  color         : #FFF;
-  padding-left  : 16px;
-  padding-right : 20px;
-}
-
-#page3Hover{
-  background    : #828282;
-  color         : #FFF;
-  padding-left  : 16px;
-  padding-right : 20px;
-}
-
-#page4Hover{
-  background    : #828282;
-  color         : #FFF;
-  padding-left  : 16px;
-  padding-right : 20px;
-}
-
-#intro{
-    width           : 100%;
-    height          : 90vh;
-    display         : flex;
-    flex-wrap       : wrap;
-    flex-direction  : column;
-    justify-content : center;
-    background-image: url(../img/fond.jpg);
-    background-size : cover;
-}
-
-#bonjour{
-    color    : white;
-    font-size: 3em;
-}
-
-#bonjour2{
-    color    : grey;
-    font-size: 2em;
-}
-
-/* ---------------------- PAGE 2 ---------------------- */
-
-#page2{
-    background-color: #102331;
-    width           : 100%;
-    height          : 100vh;
-    display         : flex;
-    flex-wrap       : wrap;
-    flex-direction  : column;
-}
-
-#motivation{
-    color      : white;
-    font-size  : 2em;
-    width      : 60%;
-    margin-left: 5%;
-    margin-top : 5%;
-}
-
-  #texte2{
-    color       : white;
-    width       : 80%;
-    flex-wrap   : wrap;
-    margin-left : auto;
-    margin-right: auto;
-    font-size   : 1.6em;
-}
-
-/* PROGRESS BAR */
-
-.progressbar {
-    width           : 50%;
-    height          : 3vh;
-    background-color: #191919;
-    padding         : 2px;
-    margin          : .6em 0;
-    margin-left     : 25%;
-    border          : 1px #000 double;
-    border-radius   : 30px;
-    clear           : both;
-    margin-left     : 5%;
-}
-
-.progress {
-    background       : #acacac; /*-Couleur de la barre */
-    height           : 3vh;
-    width            : 0%;
-    max-width        : 100%;
-    float            : left;
-    -webkit-animation: progress 2s 1 forwards;
-    -moz-animation   : progress 2s 1 forwards;
-    -ms-animation    : progress 2s 1 forwards;
-    animation        : progress 2s 1 forwards;
-    border-radius    : 30px;
-}
-
-.pbaranim {
-    height         : 3vh;
-    width          : 100%;
-    overflow       : hidden;
-    background     : url('http://www.cssdeck.com/uploads/media/items/7/7uo1osj.gif') repeat-x;
-    background-size: cover;
-    -moz-opacity   : 0.25;
-    -khtml-opacity : 0.25;
-    opacity        : 0.25;
-    -ms-filter     : progid:DXImageTransform.Microsoft.Alpha(Opacity=25);
-    filter         : progid:DXImageTransform.Microsoft.Alpha(opacity=25);
-    filter         : alpha(opacity=25);
-    border-radius  : 30px;
-}
-
-@-webkit-keyframes progress { 
-    from { }
-
-    to { width: 95% }
-}
-
-@-moz-keyframes progress { 
-    from { }
-
-    to { width: 95% }
-}
-
-@-ms-keyframes progress { 
-    from { }
-
-    to { width: 95% }
-}
-
-@keyframes progress { 
-    from { }
-
-    to { width: 95% }
-}
-
-/* ---------------------- PAGE 3 ---------------------- */
-
-#page3{
-    background-color: #271a0d;
-    width           : 100%;
-    height          : 100vh;
-    color           : white;
-}
-
-#code{
-    width      : 30%;
-    margin-left: 5%;
-    margin-top : 5%;
-    font-size  : 3em;
-}
-
-/* PROGRESS BAR */
-
-.progressbar2 {
-    width           : 50%;
-    height          : 3vh;
-    background-color: #191919;
-    padding         : 2px;
-    margin          : .6em 0;
-    margin-left     : 25%;
-    border          : 1px #000 double;
-    border-radius   : 30px;
-    clear           : both;
-    margin-left     : 5%;
-}
-
-.progress2 {
-    background       : #acacac; /*-Couleur de la barre */
-    height           : 3vh;
-    width            : 0%;
-    max-width        : 100%;
-    float            : left;
-    -webkit-animation: progress2 2s 1 forwards;
-    -moz-animation   : progress2 2s 1 forwards;
-    -ms-animation    : progress2 2s 1 forwards;
-    animation        : progress2 2s 1 forwards;
-    border-radius    : 30px;
-}
-
-.pbaranim2 {
-    height         : 3vh;
-    width          : 100%;
-    overflow       : hidden;
-    background     : url('http://www.cssdeck.com/uploads/media/items/7/7uo1osj.gif') repeat-x;
-    background-size: cover;
-    -moz-opacity   : 0.25;
-    -khtml-opacity : 0.25;
-    opacity        : 0.25;
-    -ms-filter     : progid:DXImageTransform.Microsoft.Alpha(Opacity=25);
-    filter         : progid:DXImageTransform.Microsoft.Alpha(opacity=25);
-    filter         : alpha(opacity=25);
-    border-radius  : 30px;
-}
-
-@-webkit-keyframes progress2 { 
-    from { }
-
-    to { width: 50% }
-}
-
-@-moz-keyframes progress2 { 
-    from { }
-
-    to { width: 50% }
-}
-
-@-ms-keyframes progress2 { 
-    from { }
-
-    to { width: 50% }
-}
-
-@keyframes progress2 { 
-    from { }
-
-    to { width: 50% }
-}
-
-/* ---------------------- PAGE 4 ---------------------- */
-
-#page4{
-    width           : 100%;
-    display         : flex;
-    flex-wrap       : wrap;
-    background-color: #00766D;
-    height          : 100vh;
-    color           : white;
-    align-items     : flex-start;
-
-}
-
-#mail{
-    color: white;
+header{
     width: 100%;
-}
-
-#logo{
     display: flex;
+    margin-right: 6%;
+    justify-content: flex-end;
 }
-img{
-    width: 20%;
+/*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------<Animation du Loading>------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
-}
-/* ------------------------- PC -----------------------
----------------------------- PC -----------------------
----------------------------- PC -----------------------
----------------------------- PC -----------------------
----------------------------- PC -----------------------*/
+#logoAnimation{                             /*Div qui regroupe l'animation de Loading */
+    width          : 50px;
+    height         : 50px;
+    transform      : rotate(45deg);     /*Rotation de 45 degrès */
+    display        : flex;
+    flex-wrap      : wrap-reverse;
+    justify-content: flex-end;
+    position: fixed;
 
-
-@media screen and (min-device-width: 750px){
-
-/* ---------------------- PAGE 1 ---------------------- */
-
-nav{
-    background-color: white;
-    width           : 15%;
-    height          : 100vh;
-    display         : flex;
-    font-size       : 1.5em;
-    flex-wrap       : wrap;
-    position        : fixed;
-    flex-direction  : column;
-    align-items     : flex-end;
-}
-
-#intro{
-    width           : 100%;
-    height          : 100vh;
-    display         : flex;
-    flex-wrap       : wrap;
-    flex-direction  : column;
-    justify-content : center;
-    background-image: url(../img/fond.jpg);
-    background-size : cover;
-}
-
-#bonjour{
-    color      : white;
-    font-size  : 3em;
-    margin-left:20%;
-}
-
-#bonjour2{
-    color      : grey;
-    font-size  : 2em;
-    margin-left:20%;
-}
-
-/* ---------------------- PAGE 2 ---------------------- */
-
-#page2{
-    background-color: #102331;
-    width           : 100%;
-    height          : 100vh;
-    display         : flex;
-    flex-wrap       : wrap;
-    flex-direction  : column;
-}
-
-#motivation{
-    color      : white;
-    font-size  : 1em;
-    width      : 60%;
-    margin-left: 20%;
-    margin-top : 5%;
-}
-
-  #texte2{
-    color       : white;
-    width       : 80%;
-    flex-wrap   : wrap;
-    margin-left : 20%;
-    margin-right: auto;
-    font-size   : 1em;
-}
-
-.progressbar {
-    width           : 50%;
-    height          : 2vh;
-    background-color: #191919;
-    padding         : 2px;
-    margin          : .6em 0;
-    margin-left     : 20%;
-    border          : 1px #000 double;
-    border-radius   : 30px;
-    clear           : both;
 
 }
 
-.progress {
-    background       : #acacac; /*-Couleur de la barre */
-    height           : 2vh;
-    width            : 0%;
-    max-width        : 100%;
-    float            : left;
-    -webkit-animation: progress 2s 1 forwards;
-    -moz-animation   : progress 2s 1 forwards;
-    -ms-animation    : progress 2s 1 forwards;
-    animation        : progress 2s 1 forwards;
-    border-radius    : 30px;
+#logoAnimation1{                                    /*Carré à droite */
+    width                    : 25px;
+    height                   : 25px;
+    animation-name           : animation;   /*Appel de l'animation*/
+    animation-duration       : 0.5s;
+    animation-iteration-count: infinite;    /*Répétion de l'animation indéfiniment */
+
 }
 
-.pbaranim {
-    height         : 2vh;
-    width          : 100%;
-    overflow       : hidden;
-    background     : url('http://www.cssdeck.com/uploads/media/items/7/7uo1osj.gif') repeat-x;
+#logoAnimation2{                                    /*Carré au milieu */
+    width                    : 25px;
+    height                   : 25px;
+    animation-name           : animation3;
+    animation-duration       : 1s;
+    animation-iteration-count: infinite;
+}
+
+#logoAnimation3{                                    /*Carré à gauche */
+    width                    : 25px;
+    height                   : 25px;
+    animation-name           : animation2;
+    animation-duration       : 01s;
+    animation-iteration-count: infinite;
+    animation-delay          : 0.3s;
+}
+
+@keyframes animation{                                                               /*Animation du carré de droite */
+    0% {width  : 25px; opacity: 1;background-color: #006C78;}   /*Taille de 25 pixels et aucune opacité + couleur */
+    50% {width : 1px; opacity: 0;background-color: #00A7FF;}    /*Réduction de la taille, opacité maximale et changement de couleur */
+    100% {width: 25px; opacity: 1;background-color: #006C78;}   /*Retour à la normale*/
+}
+
+@keyframes animation2{                                                              /*Animation du carré de gauche*/
+    0% {height  : 25px; opacity: 1; transform: translateX(0px);background-color: #006C78;}
+    50% {height : 1px; opacity: 0;transform: translateY(12.5px);background-color: #00A7FF;}
+    100% {height: 25px; opacity: 1;transform: translateX(0px);background-color: #006C78;}
+}
+
+@keyframes animation3{                      /*Animation du carré du milieu, consiste en un simple changement de couleur*/
+    0% {background-color  : #006C78;}
+    50% {background-color : #00A7FF;}
+    100% {background-color: #006C78;}
+}
+
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------</Animation du Loading>-----------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+ #page1{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/page1.jpg);
     background-size: cover;
-    -moz-opacity   : 0.25;
-    -khtml-opacity : 0.25;
-    opacity        : 0.25;
-    -ms-filter     : progid:DXImageTransform.Microsoft.Alpha(Opacity=25);
-    filter         : progid:DXImageTransform.Microsoft.Alpha(opacity=25);
-    filter         : alpha(opacity=25);
-    border-radius  : 30px;
-}
-
-
-/* ---------------------- PAGE 3 ---------------------- */
-
-#page3{
-    background-color: #271a0d;
-    width           : 85%;
-    margin-left     :15%;
-    height          : 100vh;
-    color           : white;
-}
-
-.progressbar2 {
-    width           : 50%;
-    height          : 2vh;
-    background-color: #191919;
-    padding         : 2px;
-    margin          : .6em 0;
-    margin-left     : 25%;
-    border          : 1px #000 double;
-    border-radius   : 30px;
-    clear           : both;
-    margin-left     : 5%;
-}
-
-.progress2 {
-    background       : #acacac; /*-Couleur de la barre */
-    height           : 2vh;
-    width            : 0%;
-    max-width        : 100%;
-    float            : left;
-    -webkit-animation: progress2 2s 1 forwards;
-    -moz-animation   : progress2 2s 1 forwards;
-    -ms-animation    : progress2 2s 1 forwards;
-    animation        : progress2 2s 1 forwards;
-    border-radius    : 30px;
-}
-
-.pbaranim2 {
-    height         : 2vh;
-    width          : 100%;
-    overflow       : hidden;
-    background     : url('http://www.cssdeck.com/uploads/media/items/7/7uo1osj.gif') repeat-x;
-    background-size: cover;
-    -moz-opacity   : 0.25;
-    -khtml-opacity : 0.25;
-    opacity        : 0.25;
-    -ms-filter     : progid:DXImageTransform.Microsoft.Alpha(Opacity=25);
-    filter         : progid:DXImageTransform.Microsoft.Alpha(opacity=25);
-    filter         : alpha(opacity=25);
-    border-radius  : 30px;
-}
-
-#code{
-    width      : 30%;
-    margin-left: 5%;
-    margin-top : 5%;
-    font-size  : 2em;
-}
-
-
-}
-
+    
+ }
