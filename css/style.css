@@ -146,11 +146,13 @@ header{
     width: 100%;
 }
 
-@keyframes cache{                                       /*Animation pour cacher la div vers le haut */
+@keyframes cache{        
+    0% {}                               /*Animation pour cacher la div vers le haut */
     100% {margin-top: 10%;}
 }
 
 @keyframes montre {
+    0%{}
     100% {margin-top: -100%;}
 }
 /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
@@ -172,6 +174,9 @@ header{
     height: 100vh;
     left: 0%;
     transition: all .5s ease-in;
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 #page2-cacher{
@@ -179,14 +184,72 @@ header{
     left: 100%;
     top: -100vh;
     z-index: 2;
-    background-color: transparent;
+    background-color: #107896;
+    opacity: 0;
     width: 100%;
     height: 100vh;
     transition: all .5s ease-in;
+    display: flex;
+    flex-direction: column;
     }
 
-h1{
+#competences{
+    background-color: rgb(18, 135, 168);
+    box-shadow      : 1px 1px 7px black;
+    height: 10vh;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: white;
+    align-self: center;
+    margin-bottom: 10%;
+    margin-top: -100%;
+    animation-name : competences-montre;
+    animation-duration: 1s;
+    animation-fill-mode: forwards; 
+}
+
+@keyframes competences-montre{
+    0%{}
+    100% {margin-top: 5%;}
+}
+
+@keyframes competences-cacher{
+    0%{}
+    100% {margin-top: -100%;}
+}
+#competences-cacher{
+    background-color: rgb(18, 135, 168);
+    box-shadow      : 1px 1px 7px black;
+    height: 10vh;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    align-self: center;
+    margin-bottom: 10%;
+    margin-top: 5%;
+    animation-name : competences-cacher;
+    animation-duration: 1s;
+    animation-fill-mode: forwards; 
+}
+
+#liste-competences{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;  
+    justify-content: space-around;
+}
+
+#codes{
+    background-color: rgb(20, 150, 187);
+    box-shadow      : 1px 1px 7px black;  
+    padding: 30px 100px 30px 100px;
+    color: white;
+    font-size: 1.5em;
 }
 /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
 /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
@@ -218,7 +281,7 @@ h1{
     height: 100vh;
     transition: all .5s ease-in;
     }
-}
+
 
 /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
 /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
