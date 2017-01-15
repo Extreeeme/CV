@@ -15,10 +15,12 @@ document.addEventListener('keyup',  function(){
     document.getElementById('page3-cacher').id = "page3";
     document.getElementById('page2').id = "page2-cacher";
     document.getElementById('competences').id = 'competences-cacher';
+    document.getElementById('titre-parcours-cacher').id = 'titre-parcours';
   }
   else if(document.getElementById('page2-cacher') && document.getElementById('page3') && event.keyCode==37){
     document.getElementById('page3').id = "page3-cacher";
     document.getElementById('page2-cacher').id = "page2";
     document.getElementById('competences-cacher').id = 'competences';
+    document.getElementById('titre-parcours').id = 'titre-parcours-cacher';
   }
 });

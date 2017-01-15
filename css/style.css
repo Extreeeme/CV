@@ -317,7 +317,65 @@ header{
     flex-direction: column;
     }
 
+#titre-parcours{
+    background-color: rgb(18, 135, 168);
+    box-shadow      : 1px 1px 7px black;
+    height: 10vh;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    align-self: center;
+    margin-bottom: 10%;
+    margin-top: -100%;
+    padding: 20px;
+    animation-name : parcours-montre;
+    animation-duration: 1s;
+    animation-fill-mode: forwards; 
+}
 
+@keyframes parcours-montre{
+    0%{}
+    100% {margin-top: 5%;}
+}
+
+@keyframes parcours-cacher{
+    0%{}
+    100% {margin-top: -100%;}
+}
+#titre-parcours-cacher{
+    background-color: rgb(18, 135, 168);
+    box-shadow      : 1px 1px 7px black;
+    height: 10vh;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    align-self: center;
+    margin-bottom: 10%;
+    margin-top: 5%;
+    animation-name : competences-cacher;
+    animation-duration: 1s;
+    animation-fill-mode: forwards; 
+}
+
+#parcours{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;  
+    justify-content: space-around;
+}
+
+#lycee{
+    background-color: rgb(20, 150, 187);
+    box-shadow      : 1px 1px 7px black;  
+    padding: 30px 100px 30px 100px;
+    color: white;
+    font-size: 1.5em;
+}
 /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
 /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
 /*----------------------------------------------------------</PAGE 3>----------------------------------------------------------------------------*/
