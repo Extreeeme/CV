@@ -1,45 +1,45 @@
-@font-face {
+@font-face {                                    /*Importation de la police personnalisée*/
     font-family: 'Ma Police';
-    src:url(../polices/sensation.ttf);
+    src: url(../polices/sensation.ttf);
 }
 
 body{                    /*Réinitialisation du body */
-    margin : 0px;
-    padding: 0px;
-    font-family: 'Ma Police', Helvetica serif;
+    margin: 0;
+    padding: 0;
     overflow: hidden;
+    font-family: 'Ma Police',Helvetica serif;
 }
 
 #container{                 /*Div principale pour FlexBox */
-    display     : flex;
-    width       : 100%;
+    display: flex;
     flex-wrap: wrap;
-}
-
-header{
     width: 100%;
+}
+
+header{                         /*Header pour le logo animé et les flèches*/
     display: flex;
-    margin-right: 6%;
     justify-content: flex-end;
+    width: 100%;
+    margin-right: 6%;
 }
 
-#images{
-    position: fixed;
-    z-index: 999;
-    width: 98%;
+#images{                    /*Div qui regroupe les deux flèches*/
     display: flex;
-    margin-left: 5%;
-    margin-top: 90vh;
+    z-index: 999;
+    position: fixed;
     justify-content: space-between;
+    width: 98%;
+    margin-top: 90vh;
+    margin-left: 5%;
 }
 
-#img1{
+#img1{                      /*Flèche gauche*/
     float: left;
     width: 50px;
     height: 50px;
 }
 
-#img2{
+#img2{                      /*Flèche droite*/
     float: right;
     width: 50px;
     height: 50px;
@@ -61,49 +61,141 @@ header{
     position: fixed;
     z-index: 999;
 }
+/*-----------------------------------------Logo bleu -----------------------------------------*/
 
-#logoAnimation1{                                    /*Carré à droite */
+
+#logoAnimation1-bleu{                                    /*Carré à droite */
     width                    : 25px;
     height                   : 25px;
-    animation-name           : animation;   /*Appel de l'animation*/
+    animation-name           : animation-bleu;   /*Appel de l'animation*/
     animation-duration       : 0.5s;
     animation-iteration-count: infinite;    /*Répétion de l'animation indéfiniment */
-
 }
 
-#logoAnimation2{                                    /*Carré au milieu */
+#logoAnimation2-bleu{                                    /*Carré au milieu */
     width                    : 25px;
     height                   : 25px;
-    animation-name           : animation3;
+    animation-name           : animation3-bleu;
     animation-duration       : 1s;
     animation-iteration-count: infinite;
 }
 
-#logoAnimation3{                                    /*Carré à gauche */
+#logoAnimation3-bleu{                                    /*Carré à gauche */
     width                    : 25px;
     height                   : 25px;
-    animation-name           : animation2;
+    animation-name           : animation2-bleu;
     animation-duration       : 01s;
     animation-iteration-count: infinite;
     animation-delay          : 0.3s;
 }
 
-@keyframes animation{                                                               /*Animation du carré de droite */
+@keyframes animation-bleu{                                                               /*Animation du carré de droite */
     0% {width  : 25px; opacity: 1;background-color: #006C78;}   /*Taille de 25 pixels et aucune opacité + couleur */
     50% {width : 1px; opacity: 0;background-color: #00A7FF;}    /*Réduction de la taille, opacité maximale et changement de couleur */
     100% {width: 25px; opacity: 1;background-color: #006C78;}   /*Retour à la normale*/
 }
 
-@keyframes animation2{                                                              /*Animation du carré de gauche*/
+@keyframes animation2-bleu{                                                              /*Animation du carré de gauche*/
     0% {height  : 25px; opacity: 1; transform: translateX(0px);background-color: #006C78;}
     50% {height : 1px; opacity: 0;transform: translateY(12.5px);background-color: #00A7FF;}
     100% {height: 25px; opacity: 1;transform: translateX(0px);background-color: #006C78;}
 }
 
-@keyframes animation3{                      /*Animation du carré du milieu, consiste en un simple changement de couleur*/
+@keyframes animation3-bleu{                      /*Animation du carré du milieu, consiste en un simple changement de couleur*/
     0% {background-color  : #006C78;}
     50% {background-color : #00A7FF;}
     100% {background-color: #006C78;}
+}
+
+
+/*-----------------------------------------Logo rouge -----------------------------------------*/
+
+#logoAnimation1-rouge{                                    /*Carré à droite */
+    width                    : 25px;
+    height                   : 25px;
+    animation-name           : animation-rouge;   /*Appel de l'animation*/
+    animation-duration       : 0.5s;
+    animation-iteration-count: infinite;    /*Répétion de l'animation indéfiniment */
+}
+
+#logoAnimation2-rouge{                                    /*Carré au milieu */
+    width                    : 25px;
+    height                   : 25px;
+    animation-name           : animation3-rouge;
+    animation-duration       : 1s;
+    animation-iteration-count: infinite;
+}
+
+#logoAnimation3-rouge{                                    /*Carré à gauche */
+    width                    : 25px;
+    height                   : 25px;
+    animation-name           : animation2-rouge;
+    animation-duration       : 01s;
+    animation-iteration-count: infinite;
+    animation-delay          : 0.3s;
+}
+
+@keyframes animation-rouge{                                                               /*Animation du carré de droite */
+    0% {width  : 25px; opacity: 1;background-color: #690600;}   /*Taille de 25 pixels et aucune opacité + couleur */
+    50% {width : 1px; opacity: 0;background-color: #DA0300;}    /*Réduction de la taille, opacité maximale et changement de couleur */
+    100% {width: 25px; opacity: 1;background-color: #690600;}   /*Retour à la normale*/
+}
+
+@keyframes animation2-rouge{                                                              /*Animation du carré de gauche*/
+    0% {height  : 25px; opacity: 1; transform: translateX(0px);background-color: #690600;}
+    50% {height : 1px; opacity: 0;transform: translateY(12.5px);background-color: #DA0300;}
+    100% {height: 25px; opacity: 1;transform: translateX(0px);background-color: #690600;}
+}
+
+@keyframes animation3-rouge{                      /*Animation du carré du milieu, consiste en un simple changement de couleur*/
+    0% {background-color  : #690600;}
+    50% {background-color : #DA0300;}
+    100% {background-color: #690600;}
+}
+
+/*-----------------------------------------Logo gris -----------------------------------------*/
+
+#logoAnimation1-gris{                                    /*Carré à droite */
+    width                    : 25px;
+    height                   : 25px;
+    animation-name           : animation-gris;   /*Appel de l'animation*/
+    animation-duration       : 0.5s;
+    animation-iteration-count: infinite;    /*Répétion de l'animation indéfiniment */
+}
+
+#logoAnimation2-gris{                                    /*Carré au milieu */
+    width                    : 25px;
+    height                   : 25px;
+    animation-name           : animation3-gris;
+    animation-duration       : 1s;
+    animation-iteration-count: infinite;
+}
+
+#logoAnimation3-gris{                                    /*Carré à gauche */
+    width                    : 25px;
+    height                   : 25px;
+    animation-name           : animation2-gris;
+    animation-duration       : 01s;
+    animation-iteration-count: infinite;
+    animation-delay          : 0.3s;
+}
+
+@keyframes animation-gris{                                                               /*Animation du carré de droite */
+    0% {width  : 25px; opacity: 1;background-color: #383838;}   /*Taille de 25 pixels et aucune opacité + couleur */
+    50% {width : 1px; opacity: 0;background-color: #C7C7C7;}    /*Réduction de la taille, opacité maximale et changement de couleur */
+    100% {width: 25px; opacity: 1;background-color: #383838;}   /*Retour à la normale*/
+}
+
+@keyframes animation2-gris{                                                              /*Animation du carré de gauche*/
+    0% {height  : 25px; opacity: 1; transform: translateX(0px);background-color: #383838;}
+    50% {height : 1px; opacity: 0;transform: translateY(12.5px);background-color: #C7C7C7;}
+    100% {height: 25px; opacity: 1;transform: translateX(0px);background-color: #383838;}
+}
+
+@keyframes animation3-gris{                      /*Animation du carré du milieu, consiste en un simple changement de couleur*/
+    0% {background-color  : #383838;}
+    50% {background-color : #C7C7C7;}
+    100% {background-color: #383838;}
 }
 
 
@@ -129,7 +221,7 @@ header{
     z-index: 0;
  }
 
-#divTransparente{
+#divTransparente{                                       /*Cadre transparent avec animation d'affichage*/
     background-color: rgba(255,255,255,0.1);
     padding: 10px;
     margin-top: -100%;
@@ -143,7 +235,7 @@ header{
     animation-fill-mode: forwards;   
 }
 
-#divTransparente-cacher{
+#divTransparente-cacher{                    /*Cadre qui est caché*/
     background-color: rgba(255,255,255,0.1);
     padding: 10px;
     margin-top:10%;
@@ -157,8 +249,7 @@ header{
     animation-fill-mode: forwards;   
 }
 
-#bonjour{
-
+#bonjour{                           /*Textes de la première page*/
     color : white;
     font-size: 3em;
     width: 100%;
@@ -170,12 +261,12 @@ header{
     width: 100%;
 }
 
-@keyframes cache{        
-    0% {}                               /*Animation pour cacher la div vers le haut */
+@keyframes cache{         /*Animation pour cacher la div vers le haut */
+    0% {}                              
     100% {margin-top: 10%;}
 }
 
-@keyframes montre {
+@keyframes montre {         /*Animation pour afficher la div*/
     0%{}
     100% {margin-top: -100%;}
 }
@@ -190,7 +281,7 @@ header{
 /*----------------------------------------------------------<PAGE 2>-----------------------------------------------------------------------------*/
 /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
 /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
-#page2{
+#page2{                                     /*Div de la page 2 qui s'affiche avec l'animation*/
     position: relative;
     background-color: #107896;
     width: 100%;
@@ -204,7 +295,7 @@ header{
     flex-direction: column;
 }
 
-#page2-cacher{
+#page2-cacher{                  /*Div cachée*/
     position: relative;
     left: 100%;
     top: -100vh;
@@ -218,7 +309,7 @@ header{
     flex-direction: column;
     }
 
-#competences{
+#competences{                              /*Div des compétences avec le titre*/ 
     background-color: rgb(18, 135, 168);
     box-shadow      : 1px 1px 7px black;
     height: 10vh;
@@ -236,15 +327,6 @@ header{
     animation-fill-mode: forwards; 
 }
 
-@keyframes competences-montre{
-    0%{}
-    100% {margin-top: 5%;}
-}
-
-@keyframes competences-cacher{
-    0%{}
-    100% {margin-top: -100%;}
-}
 #competences-cacher{
     background-color: rgb(18, 135, 168);
     box-shadow      : 1px 1px 7px black;
@@ -262,7 +344,7 @@ header{
     animation-fill-mode: forwards; 
 }
 
-#liste-competences{
+#liste-competences{             /*Div qui regroupe les compétences sans le titre*/
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -277,6 +359,17 @@ header{
     color: white;
     font-size: 1.5em;
 }
+
+@keyframes competences-montre{
+    0%{}
+    100% {margin-top: 5%;}
+}
+
+@keyframes competences-cacher{
+    0%{}
+    100% {margin-top: -100%;}
+}
+
 /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
 /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
 /*----------------------------------------------------------</PAGE 2>----------------------------------------------------------------------------*/
@@ -288,6 +381,19 @@ header{
 /*----------------------------------------------------------<PAGE 3>-----------------------------------------------------------------------------*/
 /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
 /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+#page3{
+    position: relative;
+    background-color: #9A2617;
+    top: -200vh;
+    width: 100%;
+    height: 100vh;
+    z-index: 4;
+    left: 0%;
+    transition: all .5s ease-in;
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    }
 
 #page3-cacher{
     position: relative;
@@ -303,22 +409,8 @@ header{
     flex-direction: column;
 }
 
-#page3{
-    position: relative;
-    background-color: #9A2617;
-    top: -200vh;
-    width: 100%;
-    height: 100vh;
-    z-index: 4;
-    left: 0%;
-    transition: all .5s ease-in;
-    opacity: 1;
-    display: flex;
-    flex-direction: column;
-    }
-
-#titre-parcours{
-    background-color: rgb(18, 135, 168);
+#titre-parcours{                                    /*Div du texte parcours*/
+    background-color: #AD2A1A;
     box-shadow      : 1px 1px 7px black;
     height: 10vh;
     width: 30%;
@@ -327,12 +419,46 @@ header{
     justify-content: center;
     color: white;
     align-self: center;
-    margin-bottom: 10%;
+    margin-bottom: 5%;
     margin-top: -100%;
     padding: 20px;
     animation-name : parcours-montre;
     animation-duration: 1s;
     animation-fill-mode: forwards; 
+}
+
+#titre-parcours-cacher{
+    display: flex;
+    align-items: center;
+    align-self: center;
+    justify-content: center;
+    width: 30%;
+    height: 10vh;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    color: white;
+    background-color: #AD2A1A;
+    box-shadow: 1px 1px 7px black;
+    animation-name: competences-cacher;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+#parcours{                      /*Titre du parcours*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;  
+    justify-content: center;
+}
+
+#lycee{                                     /*Les 3 expériences*/
+    background-color: #C02F1D;
+    box-shadow      : 1px 1px 7px black;  
+    padding: 30px ;
+    color: white;
+    font-size: 1.2em;
+    width: 60%;
 }
 
 @keyframes parcours-montre{
@@ -343,38 +469,6 @@ header{
 @keyframes parcours-cacher{
     0%{}
     100% {margin-top: -100%;}
-}
-#titre-parcours-cacher{
-    background-color: rgb(18, 135, 168);
-    box-shadow      : 1px 1px 7px black;
-    height: 10vh;
-    width: 30%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    align-self: center;
-    margin-bottom: 10%;
-    margin-top: 5%;
-    animation-name : competences-cacher;
-    animation-duration: 1s;
-    animation-fill-mode: forwards; 
-}
-
-#parcours{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    align-content: center;  
-    justify-content: space-around;
-}
-
-#lycee{
-    background-color: rgb(20, 150, 187);
-    box-shadow      : 1px 1px 7px black;  
-    padding: 30px 100px 30px 100px;
-    color: white;
-    font-size: 1.5em;
 }
 /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
 /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
