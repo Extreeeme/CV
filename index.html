@@ -1,91 +1,105 @@
-<!DOCTYPE html>
 
+<!DOCTYPE HTML>
 <html>
+	<head>
+		<meta charset="utf-8">
+		<title>Martin D</title>
 
-<head>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
 
-	<meta charset    ="utf-8"><!--Format de syntaxe -->
-	<meta http-equiv ="X-UA-Compatible" content="IE=edge">
-	<title>Martin D</title> <!--Titre de la page-->
-	<link rel        ="stylesheet" href="css/style.css"> <!--Liaison du fichier CSS-->
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		<script type="text/javascript" src="js/js.js"></script>
+		<script type="text/javascript" src="js/jquery.stellar.min.js"></script>
+		<script type="text/javascript" src="js/waypoints.min.js"></script>
+		<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
 
-</head>
+	</head>
 
-<body>
+	<body>
 
-	<div id="container">
+		<ul class="navigation">
 
-		<header>
+			<li data-slide="1">Accueil</li>
+			<li data-slide="2">Le code</li>
+			<li data-slide="3">Page 3</li>
+			<li data-slide="4">Page 4</li>
+		</ul>
+	          
+
+	          	<!--/////////////////////////////////////////////////////////////////////////////////////////////////////-->
+		<!--/////////////////////////////////////////Début Slide 1 ////////////////////////////////////////-->
+		<!--/////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+		<div class="slide" id="slide1" data-slide="1" data-stellar-background-ratio="0.5">
 		
-			<nav> <!-- Logo animé -->
+			<div class="wrapper">
+				
+				<img src="img/cercle4.png" width="100"data-stellar-ratio="3" data-stellar-vertical-offset="-102" alt="">
+				<img src="img/cercle1.png" data-stellar-ratio="1" data-stellar-vertical-offset="-53" alt="">
+				<img src="img/cercle2.png" data-stellar-ratio="1.3" data-stellar-vertical-offset="-150" alt="">
+				<img src="img/cercle4.png" data-stellar-ratio="1" data-stellar-vertical-offset="-93" alt="">
+				<img src="img/cercle5.png" data-stellar-ratio="1.5" data-stellar-vertical-offset="-450" alt="">
+				<img src="img/cercle3.png" data-stellar-ratio="0.8" data-stellar-vertical-offset="-100" alt="">
+					
+			</div>	
 			
-				<div id="logoAnimation">
+			<div id="slide1_texte">
+				<h2 id="bonjour">Bonjour, je suis <span id="prenom">Martin Dagostino</span>.</h2>
+				<p id="dev">Developpeur Web <span id="code">HTML/CSS/JS</span></p>
+			</div>
+		</div>
+		
+		<!--/////////////////////////////////////////////////////////////////////////////////////////////////////-->
+		<!--//////////////////////////////////////////////Fin Slide 1 ////////////////////////////////////////-->
+		<!--/////////////////////////////////////////////////////////////////////////////////////////////////////-->
+		
+		<!--/////////////////////////////////////////////////////////////////////////////////////////////////////-->
+		<!--/////////////////////////////////////////Début Slide 2 ////////////////////////////////////////-->
+		<!--/////////////////////////////////////////////////////////////////////////////////////////////////////-->
 
-					<div id="logoAnimation1-gris"></div>
-					<div id="logoAnimation2-gris"></div>
-					<div id="logoAnimation3-gris"></div>
+		<div class="slide" id="slide2" data-slide="2" data-stellar-background-ratio="0">
+		
+			
+			<span class="parallaxbg">DU CODE NON OPTIMISÉ (pour le moment)</span>
 
-				</div>
+		</div>
+		
+		<!--/////////////////////////////////////////////////////////////////////////////////////////////////////-->
+		<!--//////////////////////////////////////////////Fin Slide 2 ////////////////////////////////////////-->
+		<!--/////////////////////////////////////////////////////////////////////////////////////////////////////-->
+		
+		<!--/////////////////////////////////////////////////////////////////////////////////////////////////////-->
+		<!--/////////////////////////////////////////Début Slide 3 ////////////////////////////////////////-->
+		<!--/////////////////////////////////////////////////////////////////////////////////////////////////////-->	
 
-			</nav>
-
-			<div id="images">
-
-				<img id="img1" src="img/flecheGauche.png" alt="">
-				<img id="img2" src="img/flecheDroite.png" alt="" >
-
+		<div class="slide" id="slide3" data-slide="3" data-stellar-background-ratio="0.5">
+		
+			<div class="wrapper">
+			
+				<img src="img/3.jpg" data-stellar-ratio="2.4" data-stellar-vertical-offset="-102" alt="">
+				<img src="img/3.jpg" data-stellar-ratio="1" data-stellar-vertical-offset="-53" alt="">
+				<img src="img/3.jpg" data-stellar-ratio="2.5" data-stellar-vertical-offset="-50" alt="">
+				<img src="img/3.jpg" data-stellar-ratio="0.8" data-stellar-vertical-offset="-180" alt="">
+				<img src="img/3.jpg" data-stellar-ratio="1.2" data-stellar-vertical-offset="-230" alt="">
+				
 			</div>
 
-		</header>
-	
-	<div id="page1"> <!-- Première page -->
-		
-		<div id="divTransparente">
-			<p id="bonjour">Bonjour, je suis Martin Dagostino.</p>
-			<p id="intro">Developpeur Web : <strong>HTML / CSS / JS / PHP</strong></p>
-
 		</div>
+		
+		<!--/////////////////////////////////////////////////////////////////////////////////////////////////////-->
+		<!--//////////////////////////////////////////////Fin Slide 3 ////////////////////////////////////////-->
+		<!--/////////////////////////////////////////////////////////////////////////////////////////////////////-->
 
-	</div>
+		<!--Start Slide 4-->	
+
+		<div class="slide" id="slide4" data-slide="4" data-stellar-background-ratio="0">
 		
-	<div id="page2-cacher">
-		
-		<div id="competences-cacher">
+
 			
-			<h2>Languages maîtrisés :</h2>
+			<span class="parallaxbg">TEEEEEEEEEEEEEEEEEEEEEST</span>
 
 		</div>
 
-		<div id="liste-competences">
 
-				<p id="codes">HTML5</p>
-				<p id="codes">CSS3</p>
-				<p id="codes">JAVASCRIPT</p>
-		</div>
-
-	</div>
-
-	<div id="page3-cacher">
-		
-		<div id="titre-parcours-cacher">
-			
-			<h2>Parcours scolaire :</h2>
-
-		</div>
-
-		<div id="parcours">
-			
-			<p id="lycee">3 ans au Lycée Théodore de Banville, BAC S obtenu en 2014</p>
-			<p id="lycee">2 ans à l'Université Blaise Pascal dans la filière Informatique</p>
-			<p id="lycee">Employé en tant que receptionniste dans un Hôtel F1</p>
-
-		</div>
-	</div>
-	
-	</div>
-
-	<script src="js/script.js" type="text/javascript" charset="utf-8" async defer></script> <!--Liaison au fichier JS -->
-
-</body>
-
+	</body>
 </html>
