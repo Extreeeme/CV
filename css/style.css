@@ -1,477 +1,183 @@
-@font-face {                                    /*Importation de la police personnalisée*/
-    font-family: 'Ma Police';
-    src: url(../polices/sensation.ttf);
+@font-face {
+	font-family: 'sensation';
+	src:url(../font/sensation.ttf);
 }
 
-body{                    /*Réinitialisation du body */
+body{
+	font-family: 'sensation';
+	margin: 0;
+	padding: 0;
+}
+
+
+.content{
+    background-attachment: fixed;
+    height: 100vh;
     margin: 0;
     padding: 0;
-    overflow: hidden;
-    font-family: 'Ma Police',Helvetica serif;
-}
-
-#container{                 /*Div principale pour FlexBox */
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-}
-
-header{                         /*Header pour le logo animé et les flèches*/
-    display: flex;
-    justify-content: flex-end;
-    width: 100%;
-    margin-right: 6%;
-}
-
-#images{                    /*Div qui regroupe les deux flèches*/
-    display: flex;
-    z-index: 999;
-    position: fixed;
-    justify-content: space-between;
-    width: 98%;
-    margin-top: 90vh;
-    margin-left: 5%;
-}
-
-#img1{                      /*Flèche gauche*/
-    float: left;
-    width: 50px;
-    height: 50px;
-}
-
-#img2{                      /*Flèche droite*/
-    float: right;
-    width: 50px;
-    height: 50px;
 }
 
 
-/*------------------------------------------------------------------------------------------------------------------------------------------------------*/
-/*------------------------------------------------------------------------------------------------------------------------------------------------------*/
-/*----------------------------------------------------------<Animation du Loading>------------------------------------------------------------*/
-/*------------------------------------------------------------------------------------------------------------------------------------------------------*/
-/*------------------------------------------------------------------------------------------------------------------------------------------------------*/
-#logoAnimation{                             /*Div qui regroupe l'animation de Loading */
-    width          : 50px;
-    height         : 50px;
-    transform      : rotate(45deg);     /*Rotation de 45 degrès */
-    display        : flex;
-    flex-wrap      : wrap-reverse;
-    justify-content: flex-end;
-    position: fixed;
-    z-index: 999;
-}
-/*-----------------------------------------Logo bleu -----------------------------------------*/
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* -----------------------------------------------------------------------PAGE 1 ----------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------------- */
 
 
-#logoAnimation1-bleu{                                    /*Carré à droite */
-    width                    : 25px;
-    height                   : 25px;
-    animation-name           : animation-bleu;   /*Appel de l'animation*/
-    animation-duration       : 0.5s;
-    animation-iteration-count: infinite;    /*Répétion de l'animation indéfiniment */
+#content1{
+	background-image: url('../img/fond1.jpg');
+	background-size: cover;
+	z-index: 0;
 }
 
-#logoAnimation2-bleu{                                    /*Carré au milieu */
-    width                    : 25px;
-    height                   : 25px;
-    animation-name           : animation3-bleu;
-    animation-duration       : 1s;
-    animation-iteration-count: infinite;
+.regiment{
+	display: flex;
+	flex-direction: column;
+	padding : 10px;
 }
 
-#logoAnimation3-bleu{                                    /*Carré à gauche */
-    width                    : 25px;
-    height                   : 25px;
-    animation-name           : animation2-bleu;
-    animation-duration       : 01s;
-    animation-iteration-count: infinite;
-    animation-delay          : 0.3s;
+#presentation{
+	align-self: flex-end;
+	margin-right: 6%;
+	margin-top: 45vh;
+	margin-bottom: 10Vh;
+	position: relative;
 }
 
-@keyframes animation-bleu{                                                               /*Animation du carré de droite */
-    0% {width  : 25px; opacity: 1;background-color: #006C78;}   /*Taille de 25 pixels et aucune opacité + couleur */
-    50% {width : 1px; opacity: 0;background-color: #00A7FF;}    /*Réduction de la taille, opacité maximale et changement de couleur */
-    100% {width: 25px; opacity: 1;background-color: #006C78;}   /*Retour à la normale*/
+#citationBloc{
+	width: 60%;
+	position: relative;
 }
 
-@keyframes animation2-bleu{                                                              /*Animation du carré de gauche*/
-    0% {height  : 25px; opacity: 1; transform: translateX(0px);background-color: #006C78;}
-    50% {height : 1px; opacity: 0;transform: translateY(12.5px);background-color: #00A7FF;}
-    100% {height: 25px; opacity: 1;transform: translateX(0px);background-color: #006C78;}
+#martin h1{
+	font-size: 4em;
 }
 
-@keyframes animation3-bleu{                      /*Animation du carré du milieu, consiste en un simple changement de couleur*/
-    0% {background-color  : #006C78;}
-    50% {background-color : #00A7FF;}
-    100% {background-color: #006C78;}
+#nom{
+	color: #FFAE00;
 }
 
-
-/*-----------------------------------------Logo rouge -----------------------------------------*/
-
-#logoAnimation1-rouge{                                    /*Carré à droite */
-    width                    : 25px;
-    height                   : 25px;
-    animation-name           : animation-rouge;   /*Appel de l'animation*/
-    animation-duration       : 0.5s;
-    animation-iteration-count: infinite;    /*Répétion de l'animation indéfiniment */
+#dev{
+	color: #C6C6C6;
 }
 
-#logoAnimation2-rouge{                                    /*Carré au milieu */
-    width                    : 25px;
-    height                   : 25px;
-    animation-name           : animation3-rouge;
-    animation-duration       : 1s;
-    animation-iteration-count: infinite;
+#quote{
+	background-color: rgba(255, 255, 255, 0.2);
 }
 
-#logoAnimation3-rouge{                                    /*Carré à gauche */
-    width                    : 25px;
-    height                   : 25px;
-    animation-name           : animation2-rouge;
-    animation-duration       : 01s;
-    animation-iteration-count: infinite;
-    animation-delay          : 0.3s;
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* -----------------------------------------------------------------------PAGE 2 ----------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+#content2{
+	background-image: url('../img/fond2.jpg');
+	background-size: cover;
 }
 
-@keyframes animation-rouge{                                                               /*Animation du carré de droite */
-    0% {width  : 25px; opacity: 1;background-color: #690600;}   /*Taille de 25 pixels et aucune opacité + couleur */
-    50% {width : 1px; opacity: 0;background-color: #DA0300;}    /*Réduction de la taille, opacité maximale et changement de couleur */
-    100% {width: 25px; opacity: 1;background-color: #690600;}   /*Retour à la normale*/
+.regiment2{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
-@keyframes animation2-rouge{                                                              /*Animation du carré de gauche*/
-    0% {height  : 25px; opacity: 1; transform: translateX(0px);background-color: #690600;}
-    50% {height : 1px; opacity: 0;transform: translateY(12.5px);background-color: #DA0300;}
-    100% {height: 25px; opacity: 1;transform: translateX(0px);background-color: #690600;}
+#parcours_titre{
+	color: #FFAE00;
+	font-size: 3em;
+	margin-bottom: 40px;
+	position: relative;
 }
 
-@keyframes animation3-rouge{                      /*Animation du carré du milieu, consiste en un simple changement de couleur*/
-    0% {background-color  : #690600;}
-    50% {background-color : #DA0300;}
-    100% {background-color: #690600;}
+#parcours_liste{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	position: relative;
 }
 
-/*-----------------------------------------Logo gris -----------------------------------------*/
-
-#logoAnimation1-gris{                                    /*Carré à droite */
-    width                    : 25px;
-    height                   : 25px;
-    animation-name           : animation-gris;   /*Appel de l'animation*/
-    animation-duration       : 0.5s;
-    animation-iteration-count: infinite;    /*Répétion de l'animation indéfiniment */
+#scolaire_liste{
+	width: 40%;
+	margin-bottom: 40px;
+	position: relative;
 }
 
-#logoAnimation2-gris{                                    /*Carré au milieu */
-    width                    : 25px;
-    height                   : 25px;
-    animation-name           : animation3-gris;
-    animation-duration       : 1s;
-    animation-iteration-count: infinite;
+#emploi_liste{
+	width: 40%;
+	margin-bottom: 40px;
+	position: relative;
 }
 
-#logoAnimation3-gris{                                    /*Carré à gauche */
-    width                    : 25px;
-    height                   : 25px;
-    animation-name           : animation2-gris;
-    animation-duration       : 01s;
-    animation-iteration-count: infinite;
-    animation-delay          : 0.3s;
+#diplome_liste{
+	width: 40%;
+	position: relative;
 }
 
-@keyframes animation-gris{                                                               /*Animation du carré de droite */
-    0% {width  : 25px; opacity: 1;background-color: #383838;}   /*Taille de 25 pixels et aucune opacité + couleur */
-    50% {width : 1px; opacity: 0;background-color: #C7C7C7;}    /*Réduction de la taille, opacité maximale et changement de couleur */
-    100% {width: 25px; opacity: 1;background-color: #383838;}   /*Retour à la normale*/
-}
-
-@keyframes animation2-gris{                                                              /*Animation du carré de gauche*/
-    0% {height  : 25px; opacity: 1; transform: translateX(0px);background-color: #383838;}
-    50% {height : 1px; opacity: 0;transform: translateY(12.5px);background-color: #C7C7C7;}
-    100% {height: 25px; opacity: 1;transform: translateX(0px);background-color: #383838;}
-}
-
-@keyframes animation3-gris{                      /*Animation du carré du milieu, consiste en un simple changement de couleur*/
-    0% {background-color  : #383838;}
-    50% {background-color : #C7C7C7;}
-    100% {background-color: #383838;}
+#permis_liste{
+	width: 40%;
+	position: relative;
 }
 
 
-/*------------------------------------------------------------------------------------------------------------------------------------------------------*/
-/*------------------------------------------------------------------------------------------------------------------------------------------------------*/
-/*----------------------------------------------------------</Animation du Loading>-----------------------------------------------------------*/
-/*------------------------------------------------------------------------------------------------------------------------------------------------------*/
-/*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* -----------------------------------------------------------------------PAGE 3 ----------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------------- */
 
-/*------------------------------------------------------------------------------------------------------------------------------------------------------*/
-/*------------------------------------------------------------------------------------------------------------------------------------------------------*/
-/*----------------------------------------------------------<PAGE 1>------------------------------------------------------------------------------*/
-/*------------------------------------------------------------------------------------------------------------------------------------------------------*/
-/*------------------------------------------------------------------------------------------------------------------------------------------------------*/
- #page1{
-    width: 100%;
-    height: 100vh;                                              /*Hauteur du paragraphe = hauteur de l'écran*/
-    background-image: url(../img/fond.jpg);
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 0;
- }
-
-#divTransparente{                                       /*Cadre transparent avec animation d'affichage*/
-    background-color: rgba(255,255,255,0.1);
-    padding: 10px;
-    margin-top: -100%;
-    display: flex;
-    flex-wrap: wrap;
-    height: 40vh;
-    width: 80%;
-    box-shadow      : 1px 1px 7px black;
-    animation-name : cache;
-    animation-duration: 2s;
-    animation-fill-mode: forwards;   
+#content3{
+	background-image: url('../img/code.png');
+	background-size: cover;
 }
 
-#divTransparente-cacher{                    /*Cadre qui est caché*/
-    background-color: rgba(255,255,255,0.1);
-    padding: 10px;
-    margin-top:10%;
-    display: flex;
-    flex-wrap: wrap;
-    height: 40vh;
-    width: 80%;
-    box-shadow      : 1px 1px 7px black;
-    animation-name : montre;
-    animation-duration: 2s;
-    animation-fill-mode: forwards;   
+.regiment3{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
-#bonjour{                           /*Textes de la première page*/
-    color : white;
-    font-size: 3em;
-    width: 100%;
+#competences_titre{
+	color: #FFAE00;
+	margin: 30px;
+	font-size: 3em;
+	border : solid 1px white;
+	border-radius: 50px;
+	padding: 20px;
 }
 
-#intro{
-    color : grey;
-    font-size: 1.5em;
-    width: 100%;
+#competences_code{
+	width: 90%;
+	background-color: rgba(255, 255, 255, 0.1);
+	padding: 20px;
+}
+#html{
+	font-size: 2em;
 }
 
-@keyframes cache{         /*Animation pour cacher la div vers le haut */
-    0% {}                              
-    100% {margin-top: 10%;}
+#css{
+	font-size: 2em;
 }
 
-@keyframes montre {         /*Animation pour afficher la div*/
-    0%{}
-    100% {margin-top: -100%;}
-}
-/*------------------------------------------------------------------------------------------------------------------------------------------------------*/
-/*------------------------------------------------------------------------------------------------------------------------------------------------------*/
-/*----------------------------------------------------------</PAGE 1>----------------------------------------------------------------------------*/
-/*------------------------------------------------------------------------------------------------------------------------------------------------------*/
-/*------------------------------------------------------------------------------------------------------------------------------------------------------*/
-
-/*------------------------------------------------------------------------------------------------------------------------------------------------------*/
-/*------------------------------------------------------------------------------------------------------------------------------------------------------*/
-/*----------------------------------------------------------<PAGE 2>-----------------------------------------------------------------------------*/
-/*------------------------------------------------------------------------------------------------------------------------------------------------------*/
-/*------------------------------------------------------------------------------------------------------------------------------------------------------*/
-#page2{                                     /*Div de la page 2 qui s'affiche avec l'animation*/
-    position: relative;
-    background-color: #107896;
-    width: 100%;
-    top: -100vh;
-    height: 100vh;
-    left: 0%;
-    transition: all .5s ease-in;
-    opacity: 1;
-    display: flex;
-    z-index: 1;
-    flex-direction: column;
+#php{
+	font-size: 2em;
 }
 
-#page2-cacher{                  /*Div cachée*/
-    position: relative;
-    left: 100%;
-    top: -100vh;
-    z-index: 1;
-    background-color: #107896;
-    opacity: 0;
-    width: 100%;
-    height: 100vh;
-    transition: all .5s ease-in;
-    display: flex;
-    flex-direction: column;
-    }
-
-#competences{                              /*Div des compétences avec le titre*/ 
-    background-color: rgb(18, 135, 168);
-    box-shadow      : 1px 1px 7px black;
-    height: 10vh;
-    width: 30%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    align-self: center;
-    margin-bottom: 10%;
-    margin-top: -100%;
-    padding: 20px;
-    animation-name : competences-montre;
-    animation-duration: 1s;
-    animation-fill-mode: forwards; 
+#js{
+	font-size: 2em;
 }
 
-#competences-cacher{
-    background-color: rgb(18, 135, 168);
-    box-shadow      : 1px 1px 7px black;
-    height: 10vh;
-    width: 30%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    align-self: center;
-    margin-bottom: 10%;
-    margin-top: 5%;
-    animation-name : competences-cacher;
-    animation-duration: 1s;
-    animation-fill-mode: forwards; 
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* -----------------------------------------------------------------------PAGE 4 ----------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+#content4{
+	background-image: url('../img/montagne.png');
+	background-size: cover;
 }
 
-#liste-competences{             /*Div qui regroupe les compétences sans le titre*/
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    align-content: center;  
-    justify-content: space-around;
+#contact_titre{
+	font-size: 3em;
+	margin-top: 50px;
+	margin-bottom : 80px;
 }
 
-#codes{
-    background-color: rgb(20, 150, 187);
-    box-shadow      : 1px 1px 7px black;  
-    padding: 30px 100px 30px 100px;
-    color: white;
-    font-size: 1.5em;
+.contacts{
+	font-size: 2em;
+	padding: 30px;
+	border-bottom: 1px white solid;
 }
-
-@keyframes competences-montre{
-    0%{}
-    100% {margin-top: 5%;}
-}
-
-@keyframes competences-cacher{
-    0%{}
-    100% {margin-top: -100%;}
-}
-
-/*------------------------------------------------------------------------------------------------------------------------------------------------------*/
-/*------------------------------------------------------------------------------------------------------------------------------------------------------*/
-/*----------------------------------------------------------</PAGE 2>----------------------------------------------------------------------------*/
-/*------------------------------------------------------------------------------------------------------------------------------------------------------*/
-/*------------------------------------------------------------------------------------------------------------------------------------------------------*/
-
-/*------------------------------------------------------------------------------------------------------------------------------------------------------*/
-/*------------------------------------------------------------------------------------------------------------------------------------------------------*/
-/*----------------------------------------------------------<PAGE 3>-----------------------------------------------------------------------------*/
-/*------------------------------------------------------------------------------------------------------------------------------------------------------*/
-/*------------------------------------------------------------------------------------------------------------------------------------------------------*/
-#page3{
-    position: relative;
-    background-color: #9A2617;
-    top: -200vh;
-    width: 100%;
-    height: 100vh;
-    z-index: 4;
-    left: 0%;
-    transition: all .5s ease-in;
-    opacity: 1;
-    display: flex;
-    flex-direction: column;
-    }
-
-#page3-cacher{
-    position: relative;
-    left:100%;
-    top: -200vh;
-    z-index: 3;
-    background-color: #9A2617;
-    width: 100%;
-    height: 100vh;
-    opacity: 0;
-    transition: all .5s ease-in;
-    display: flex;
-    flex-direction: column;
-}
-
-#titre-parcours{                                    /*Div du texte parcours*/
-    background-color: #AD2A1A;
-    box-shadow      : 1px 1px 7px black;
-    height: 10vh;
-    width: 30%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    align-self: center;
-    margin-bottom: 5%;
-    margin-top: -100%;
-    padding: 20px;
-    animation-name : parcours-montre;
-    animation-duration: 1s;
-    animation-fill-mode: forwards; 
-}
-
-#titre-parcours-cacher{
-    display: flex;
-    align-items: center;
-    align-self: center;
-    justify-content: center;
-    width: 30%;
-    height: 10vh;
-    margin-top: 5%;
-    margin-bottom: 5%;
-    color: white;
-    background-color: #AD2A1A;
-    box-shadow: 1px 1px 7px black;
-    animation-name: competences-cacher;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-}
-
-#parcours{                      /*Titre du parcours*/
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-content: center;  
-    justify-content: center;
-}
-
-#lycee{                                     /*Les 3 expériences*/
-    background-color: #C02F1D;
-    box-shadow      : 1px 1px 7px black;  
-    padding: 30px ;
-    color: white;
-    font-size: 1.2em;
-    width: 60%;
-}
-
-@keyframes parcours-montre{
-    0%{}
-    100% {margin-top: 5%;}
-}
-
-@keyframes parcours-cacher{
-    0%{}
-    100% {margin-top: -100%;}
-}
-/*------------------------------------------------------------------------------------------------------------------------------------------------------*/
-/*------------------------------------------------------------------------------------------------------------------------------------------------------*/
-/*----------------------------------------------------------</PAGE 3>----------------------------------------------------------------------------*/
-/*------------------------------------------------------------------------------------------------------------------------------------------------------*/
-/*------------------------------------------------------------------------------------------------------------------------------------------------------*/
