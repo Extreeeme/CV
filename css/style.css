@@ -1,225 +1,185 @@
-/*Couleurs utilisés : 
-    bleu : #11A478
-    orange : #FF7F00*/
 
-@font-face {                                    /*Importation de la police personnalisée*/
-    font-family: 'Ma Police';
-    src: url(../polices/sensation.ttf);
+@font-face {
+	font-family: 'sensation';
+	src:url(../font/sensation.ttf);
 }
 
-html,body{
-     font-family: 'Ma Police',Helvetica serif;
-    width:100%;
-    height:100%;
-    color:#000000;
-    background:#FFFFFF;
-    margin:0;
-    padding:0;
+body{
+	font-family: 'sensation';
+	margin: 0;
+	padding: 0;
 }
 
-.navigation{
-    position:fixed;
-    z-index:1;
-    top:20px;
-}
 
-.navigation li{
-    color: #11A478;
-    display:block;
-    padding: 0 10px;
-    line-height:30px;
-    margin-bottom:2px;
-    font-weight:bold;
-    -webkit-transition: all .2s ease-in-out;
-    text-align:left;
-    width:60px;
-}
-.navigation li:hover,.active{
-    font-size:25px;
-    cursor:pointer;
-    color:#FF7F00;
-    width:100px!important;
-}
-
-.slide{
+.content{
     background-attachment: fixed;
-    width:100%;
-    height:100%;
-    position: relative;
-    box-shadow:inset 0px 10px 10px rgba(0,0,0,0.3);
-}
-.wrapper{
-    width:960px;
-    height:200px;
-    margin:0 auto;
-    position:relative;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
 }
 
 
-/******************************
- SLIDE 1 
-*******************************/
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* -----------------------------------------------------------------------PAGE 1 ----------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------------- */
 
-#slide1{
-    background-color : #F2F2F2;
-}
 
-#slide1 img:first-child{
-    position:absolute;
-    top: 400px;
-    left: -200px;
-    z-index: 1;
-    opacity : 0.2;
-}
-#slide1 img:nth-child(2){
-    position:absolute;
-    top:100px;
-    left:0px;
-    opacity : 0.2;
-}
-#slide1 img:nth-child(3){
-    position:absolute;
-    top:500px;
-    left:200px;
-    opacity : 0.2;
-}
-#slide1 img:nth-child(4){
-    position:absolute;
-    top:450px;
-    left:0px;
-    opacity : 0.2;
-}
-#slide1 img:nth-child(5){
-    position:absolute;
-    top:200px;
-    left:-200px;
-    opacity : 0.2;
-}
-#slide1 img:nth-child(6){
-    position:absolute;
-    top:100px;
-    left: 400px;
-    opacity : 0.2;
+#content1{
+	background-image: url('../img/fond1.jpg');
+	background-size: cover;
+	z-index: 0;
 }
 
-#slide1 .parallaxbg{
-    position:absolute;
-    right: 50px;
-    top:265px;
-    font-size:65px;
-    font-weight: bold;
-    background-color:rgba(51,51,51,0.3);
-    padding: 15px;
-    color:#AEDBFA;
+.regiment{
+	display: flex;
+	flex-direction: column;
+	padding : 10px;
 }
 
-#slide1_texte{
-    display: flex;
-    width:95%;
-    flex-direction: column;
-   align-items: flex-end;
+#presentation{
+	align-self: flex-end;
+	margin-right: 6%;
+	margin-top: 45vh;
+	margin-bottom: 10Vh;
+	position: relative;
 }
 
-#bonjour{
-    font-size: 3em;
-    font-weight: lighter;
-    color : grey;
-    z-index: 1;
+#citationBloc{
+	width: 60%;
+	position: relative;
+}
+
+#martin h1{
+	font-size: 4em;
+}
+
+#nom{
+	color: #FFAE00;
 }
 
 #dev{
-    font-size: 2em;
-    color: grey;
-}
-#prenom{
-    font-weight: normal;
-    color: #11A478;
-}
-#code{
-    font-weight: bolder;
-    color : #FF7F00;
-}
-/******************************
- SLIDE 2 
-*******************************/
-#slide2{
-    background: url(../img/code1.png) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+	color: #C6C6C6;
 }
 
-#slide2 .parallaxbg{
-     position:absolute;
-    right:40px;
-    top:250px;
-    font-size:48px;
-    background-color:rgba(51,51,51,0.3);
-    padding: 15px;
-    color:#dddddd;
+#quote{
+	background-color: rgba(255, 255, 255, 0.2);
 }
 
-/******************************
- SLIDE 3 
-*******************************/
-#slide3{
-    background-color:#F2F2F2;
-}
-#slide3 img:first-child{
-    position:absolute;
-    top: 200px;
-    left: 400px;
-    width: 200px;
-}
-#slide3 img:nth-child(2){
-    position:absolute;
-    top:100px;
-    left:350px;
-    width: 200px;
-}
-#slide3 img:nth-child(3){
-    position:absolute;
-    top:150px;
-    left:400px;
-    width: 200px;
-}
-#slide3 img:nth-child(4){
-    position:absolute;
-    top:450px;
-    left:300px;
-    width: 200px;
-}
-#slide3 img:nth-child(5){
-    position:absolute;
-    top:200px;
-    left:50px;
-    width: 200px;
-}
-#slide3 img:nth-child(6){
-    position:absolute;
-    top:100px;
-    right:300px;
-    width: 200px;
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* -----------------------------------------------------------------------PAGE 2 ----------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+#content2{
+	background-image: url('../img/fond2.jpg');
+	background-size: cover;
 }
 
-/******************************
- SLIDE 4 
-*******************************/
-
-#slide4{
-    background-image:url(../img/page1.jpg);
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+.regiment2{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
-#slide4 .parallaxbg{
-    position:absolute;
-    right:40px;
-    top:250px;
-    font-size:48px;
-    background-color:rgba(51,51,51,0.3);
-    padding: 15px;
-    color:#dddddd;
+
+#parcours_titre{
+	color: #FFAE00;
+	font-size: 3em;
+	margin-bottom: 40px;
+	position: relative;
+}
+
+#parcours_liste{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	position: relative;
+}
+
+#scolaire_liste{
+	width: 40%;
+	margin-bottom: 40px;
+	position: relative;
+}
+
+#emploi_liste{
+	width: 40%;
+	margin-bottom: 40px;
+	position: relative;
+}
+
+#diplome_liste{
+	width: 40%;
+	position: relative;
+}
+
+#permis_liste{
+	width: 40%;
+	position: relative;
+}
+
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* -----------------------------------------------------------------------PAGE 3 ----------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+#content3{
+	background-image: url('../img/code.png');
+	background-size: cover;
+}
+
+.regiment3{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#competences_titre{
+	color: #FFAE00;
+	margin: 30px;
+	font-size: 3em;
+	border : solid 1px white;
+	border-radius: 50px;
+	padding: 20px;
+}
+
+#competences_code{
+	width: 90%;
+	background-color: rgba(255, 255, 255, 0.1);
+	padding: 20px;
+}
+#html{
+	font-size: 2em;
+}
+
+#css{
+	font-size: 2em;
+}
+
+#php{
+	font-size: 2em;
+}
+
+#js{
+	font-size: 2em;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* -----------------------------------------------------------------------PAGE 4 ----------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+#content4{
+	background-image: url('../img/montagne.png');
+	background-size: cover;
+}
+
+#contact_titre{
+	font-size: 3em;
+	margin-top: 50px;
+	margin-bottom : 80px;
+}
+
+.contacts{
+	font-size: 2em;
+	padding: 30px;
+	border-bottom: 1px white solid;
+>>>>>>> master
 }

@@ -1,104 +1,195 @@
 
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>Martin D</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Parallax</title>
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="css/style.css">
+		<script type="text/javascript" src="js/jquery-1.10.1.js"></script>
+		<script type="text/javascript" src="js/jquery.stellar.js"></script>
 
-		<link rel="stylesheet" type="text/css" href="css/style.css">
-
-		<script type="text/javascript" src="js/jquery.min.js"></script>
-		<script type="text/javascript" src="js/js.js"></script>
-		<script type="text/javascript" src="js/jquery.stellar.min.js"></script>
-		<script type="text/javascript" src="js/waypoints.min.js"></script>
-		<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
 	</head>
-
 	<body>
-
-		<ul class="navigation">
-
-			<li data-slide="1">Accueil</li>
-			<li data-slide="2">Le code</li>
-			<li data-slide="3">Page 3</li>
-			<li data-slide="4">Page 4</li>
-		</ul>
-	          
-
-	          	<!--/////////////////////////////////////////////////////////////////////////////////////////////////////-->
-		<!--/////////////////////////////////////////Début Slide 1 ////////////////////////////////////////-->
-		<!--/////////////////////////////////////////////////////////////////////////////////////////////////////-->
-
-		<div class="slide" id="slide1" data-slide="1" data-stellar-background-ratio="0.5">
 		
-			<div class="wrapper">
-				
-				<img src="img/cercle4.png" width="100"data-stellar-ratio="3" data-stellar-vertical-offset="-102" alt="">
-				<img src="img/cercle1.png" data-stellar-ratio="1" data-stellar-vertical-offset="-53" alt="">
-				<img src="img/cercle2.png" data-stellar-ratio="1.3" data-stellar-vertical-offset="-150" alt="">
-				<img src="img/cercle4.png" data-stellar-ratio="1" data-stellar-vertical-offset="-93" alt="">
-				<img src="img/cercle5.png" data-stellar-ratio="1.5" data-stellar-vertical-offset="-450" alt="">
-				<img src="img/cercle3.png" data-stellar-ratio="0.8" data-stellar-vertical-offset="-100" alt="">
-					
-			</div>	
-			
-			<div id="slide1_texte">
-				<h2 id="bonjour">Bonjour, je suis <span id="prenom">Martin Dagostino</span>.</h2>
-				<p id="dev">Developpeur Web <span id="code">HTML/CSS/JS</span></p>
+		<!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+		<!-- ////////////////////////////////////////////////////////////////////PAGE 1///////////////////////////////////////////////////////////////-->
+		<!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+		<div class="content" id="content1" data-stellar-background-ratio="0.5">
+
+
+			<div class="regiment">
+				<div id="presentation" data-stellar-ratio="1.4" >
+					<h1>Bonjour, je suis <span id="nom">Martin Dagostino</span></h1>
+					<h3 id="dev">Développeur HTML / CSS / PHP / JS</h3>
+				</div>
+
+				<div id="citationBloc" >
+					<blockquote id="quote">
+						  <p>On considère que les neuf dixièmes du code correspondent à environ 90% du temps de développement. Les 10% restant correspondent également à 90% du temps de développement.</p>
+						  <small>Tom Cargill<cite title="Source Title"> Mercredi 25 février 2009</cite></small>
+					</blockquote>
+				</div>
 			</div>
 		</div>
-		
-		<!--/////////////////////////////////////////////////////////////////////////////////////////////////////-->
-		<!--//////////////////////////////////////////////Fin Slide 1 ////////////////////////////////////////-->
-		<!--/////////////////////////////////////////////////////////////////////////////////////////////////////-->
-		
-		<!--/////////////////////////////////////////////////////////////////////////////////////////////////////-->
-		<!--/////////////////////////////////////////Début Slide 2 ////////////////////////////////////////-->
-		<!--/////////////////////////////////////////////////////////////////////////////////////////////////////-->
 
-		<div class="slide" id="slide2" data-slide="2" data-stellar-background-ratio="0">
-		
-			
-			<span class="parallaxbg">DU CODE NON OPTIMISÉ (pour le moment)</span>
+		<!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+		<!-- ////////////////////////////////////////////////////////////////////PAGE 2///////////////////////////////////////////////////////////////-->
+		<!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
 
-		</div>
-		
-		<!--/////////////////////////////////////////////////////////////////////////////////////////////////////-->
-		<!--//////////////////////////////////////////////Fin Slide 2 ////////////////////////////////////////-->
-		<!--/////////////////////////////////////////////////////////////////////////////////////////////////////-->
-		
-		<!--/////////////////////////////////////////////////////////////////////////////////////////////////////-->
-		<!--/////////////////////////////////////////Début Slide 3 ////////////////////////////////////////-->
-		<!--/////////////////////////////////////////////////////////////////////////////////////////////////////-->	
+		<div class="content" id="content2" data-stellar-background-ratio="0.5">
 
-		<div class="slide" id="slide3" data-slide="3" data-stellar-background-ratio="0.5">
-		
-			<div class="wrapper">
-			
-				<img src="img/3.jpg" data-stellar-ratio="2.4" data-stellar-vertical-offset="-102" alt="">
-				<img src="img/3.jpg" data-stellar-ratio="1" data-stellar-vertical-offset="-53" alt="">
-				<img src="img/3.jpg" data-stellar-ratio="2.5" data-stellar-vertical-offset="-50" alt="">
-				<img src="img/3.jpg" data-stellar-ratio="0.8" data-stellar-vertical-offset="-180" alt="">
-				<img src="img/3.jpg" data-stellar-ratio="1.2" data-stellar-vertical-offset="-230" alt="">
-				
+			<div class="regiment2">
+				<div id="parcours" >
+
+					<h2 id="parcours_titre">
+						MON PARCOURS
+					</h2>
+				</div>
+				<div id="parcours_liste" >
+					<div id="scolaire_liste" >
+						<div class="panel panel-success">
+							<div class="panel-heading">
+								<h3 class="panel-title">Scolaire</h3>
+							</div>
+							<div class="panel-body">
+								Collège Charles Peguy
+							</div>
+							<div class="panel-body">
+								Lycée Théodore de Banville
+							</div>
+							<div class="panel-body">
+								Université Blaise Pascal Licence Informatique
+							</div>
+						</div>
+					</div>
+
+					<div id="emploi_liste">
+						<div class="panel panel-warning" >
+							<div class="panel-heading">
+								<h3 class="panel-title">Professionel</h3>
+							</div>
+							<div class="panel-body">
+								Receptionniste hôtelier
+							</div>
+							<div class="panel-body">
+								Formation Développement Web "La Fabrik du numérique"
+							</div>
+						</div>
+					</div>
+
+					<div id="diplome_liste">
+						<div class="panel panel-primary">
+							<div class="panel-heading">
+								<h3 class="panel-title">Diplôme</h3>
+							</div>
+							<div class="panel-body">
+								B.E.P.C
+							</div>
+							<div class="panel-body">
+								2014 : Baccalauréat Scientifique option Informatique
+							</div>
+						</div>
+					</div>
+
+					<div id="permis_liste" >
+						<div class="panel panel-info">
+							<div class="panel-heading">
+								<h3 class="panel-title">Permis</h3>
+							</div>
+							<div class="panel-body">
+								B Voiture
+							</div>
+							<div class="panel-body">
+								A2 Moto
+							</div>
+						</div>
+					</div>
+				</div>
+
 			</div>
 
 		</div>
-		
-		<!--/////////////////////////////////////////////////////////////////////////////////////////////////////-->
-		<!--//////////////////////////////////////////////Fin Slide 3 ////////////////////////////////////////-->
-		<!--/////////////////////////////////////////////////////////////////////////////////////////////////////-->
 
-		<!--Start Slide 4-->	
+		<!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+		<!-- ////////////////////////////////////////////////////////////////////PAGE 3///////////////////////////////////////////////////////////////-->
+		<!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
 
-		<div class="slide" id="slide4" data-slide="4" data-stellar-background-ratio="0">
-		
+		<div class="col-md-12 content" id="content3" data-stellar-background-ratio="0.5">
+			<div class="regiment3">
+				<div id="competences">
+					<h3 id="competences_titre">
+						MES COMPÉTENCES
+					</h3>
+				</div>
 
+				<div id="competences_code">
+					<div id="html">
+						HTML :
+						<div class="progress progress-striped active">
+							<div class="progress-bar" style="width: 95%"></div>
+						</div>
+					</div>
+
+					<div id="css">
+						CSS :
+						<div class="progress progress-striped active">
+							<div class="progress-bar" style="width: 80%"></div>
+						</div>
+					</div>
+
+					<div id="php">
+						PHP :
+						<div class="progress progress-striped active">
+							<div class="progress-bar" style="width: 60%"></div>
+						</div>
+					</div>
+
+					<div id="js">
+						JAVASCRIPT :
+						<div class="progress progress-striped active">
+							<div class="progress-bar" style="width: 70%"></div>
+						</div>
+					</div>
+				</div>
+			</div>
 			
-			<span class="parallaxbg">TEEEEEEEEEEEEEEEEEEEEEST</span>
+		</div>
 
+		<!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+		<!-- ////////////////////////////////////////////////////////////////////PAGE 4///////////////////////////////////////////////////////////////-->
+		<!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+		<div class="col-md-12 content" id="content4" data-stellar-background-ratio="0.5">
+			<div class="regiment3">
+				<div id="contact">
+					<h2 id="contact_titre">
+						ME CONTACTER
+					</h2>
+				</div>
+				<div id="liens">
+					<div class="contacts" id="github">
+						GitHub : <a href="https://github.com/Extreeeme" target="_blank">https://github.com/Extreeeme</a>
+					</div>
+					<div class="contacts" id="facebook">
+						Facebook : <a href="https://www.facebook.com/profile.php?id=100004870004942" target="_blank">Martin Dagostino</a>
+					</div>
+					<div class="contacts" id="twitter">
+						Twitter : <a href="https://twitter.com/Extreme033" target="_blank">https://twitter.com/Extreme033</a>
+					</div>
+					<div class="contacts" id="gmail">
+						Gmail : <a href="#">martindcontact@gmail.com</a>
+					</div>
+				</div>
+			</div>
 		</div>
 
 
+
+		<script type="text/javascript" src="js/script.js"></script>
 	</body>
 </html>
+
