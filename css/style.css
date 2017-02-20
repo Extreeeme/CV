@@ -122,7 +122,7 @@ body{
 /* ---------------------------------------------------------------------------------------------------------------------------------------------------------- */
 
 #content3{
-	background-image: url('../img/code.png');
+	background-image: url('../img/code2.png');
 	background-size: cover;
 }
 
@@ -133,33 +133,41 @@ body{
 }
 
 #competences_titre{
-	color: #FFAE00;
+	color: white;
 	margin: 30px;
-	font-size: 3em;
-	border : solid 1px white;
-	border-radius: 50px;
+	font-size: 2.5em;
+	border : solid 2px #FFAE00;
+	border-radius: 30px;
 	padding: 20px;
 }
 
 #competences_code{
-	width: 90%;
+	width: 80%;
 	background-color: rgba(255, 255, 255, 0.1);
 	padding: 20px;
 }
 #html{
-	font-size: 2em;
+	color: white;
+	font-weight : bolder;
+	font-size: 1.5em;
 }
 
 #css{
-	font-size: 2em;
+	color: white;
+	font-weight : bolder;
+	font-size: 1.5em;
 }
 
 #php{
-	font-size: 2em;
+	color: white;
+	font-weight : bolder;
+	font-size: 1.5em;
 }
 
 #js{
-	font-size: 2em;
+	color: white;
+	font-weight : bolder;
+	font-size: 1.5em;
 }
 
 /* ---------------------------------------------------------------------------------------------------------------------------------------------------------- */
@@ -181,5 +189,5 @@ body{
 	font-size: 2em;
 	padding: 30px;
 	border-bottom: 1px white solid;
->>>>>>> master
 }
+
