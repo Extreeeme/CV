@@ -70,7 +70,30 @@
 	</div>
 
 	<div id="slide_4">
-		
+		<section class="timeline">
+  <ul>
+    <li>
+      <div>
+        <time>2014</time>Baccalauréat Option Informatique obtenu au Lycée Théodore de Banville à Moulins sur Allier(03000).
+      </div>
+    </li>
+    <li>
+      <div>
+        <time>2015</time> Étudie à l'Université Blaise Pascal à Clermont-Ferrand (63000) en vue d'obtenir une licence Informatique. Quitte le cursus après 2 ans d'études.
+      </div>
+    </li>
+    <li>
+      <div>
+        <time>2016</time>Salarié dans un hôtel Formule 1 à Toulon sur Allier (03000) pendant 3 mois.
+      </div>
+    </li>
+    <li>
+      <div>
+        <time>2017</time>En formation de développement Web par la Grande École du Numérique à Moulins sur Allier (03000).
+      </div>
+    </li>
+  </ul>
+</section>
 	</div>
 	<script type="text/javascript" src="js/script.js"></script>
 </body>
