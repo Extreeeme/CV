@@ -1,0 +1,140 @@
+@font-face {
+	font-family:'Sensation';
+	src:url(../../font/sensation.ttf);
+}
+
+@font-face {
+	font-family:'Roboto';
+	src:url(../../font/Roboto.ttf);
+}
+
+@font-face {
+	font-family:'RobotoL';
+	src:url(../../font/Roboto-l.ttf);
+}
+
+
+@-webkit-keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes apparition{
+ 	0%{opacity: 0;}
+ 	100%{opacity: 1;}
+ }
+
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+#slide_1{
+	width: 100%;
+	height: 100vh;
+
+	display: flex;
+	justify-content : center;
+	align-items : center;
+
+	background-image : url(../../img/clavier.JPG);
+	background-size: cover;
+
+	h1{
+		padding: 30px;
+		margin: 0;
+		margin-top: -70px;
+
+		font-size: 4em;
+		font-family: 'Sensation';
+		font-weight: lighter;
+
+		color : white;
+		background-color: rgba(255, 255, 255, 0.4);
+		box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+		position : fixed;
+
+		animation-name : apparition;
+		animation-duration : 1s;	
+	}
+}
+
+#slide_2{
+	width: 100%;
+	height: 100vh;
+	font-family: 'RobotoL';
+	display: flex;
+	flex-direction : column;
+	background-color: white;
+
+	h2{
+		font-size: 2em;
+		margin-top: 50px;
+		margin-left: 20px;
+		padding-bottom: 20px;
+		width: 50%;
+		color: #CE0000;
+		border-bottom: 1px solid #CE0000;
+		font-family: 'Sensation';
+	}
+
+	p{
+		margin: 20px;
+		font-size: 1.4em;
+	}
+
+	#icons{
+		display : flex;
+		justify-content : space-around;
+		margin-top: 30px;
+
+		#logo{
+		width: 10%;
+		display: flex;
+		flex-direction : column;
+		align-items : center;
+
+			&:hover{
+				-webkit-animation-duration: 1s;
+				animation-duration: 1s;
+				-webkit-animation-fill-mode: both;
+				animation-fill-mode: both;
+				-webkit-animation-name: pulse;
+  				animation-name: pulse;
+			}
+		}
+	}
+	#texte_logo{
+			display: flex;
+			justify-content : space-around;
+			text-align: center;
+		}
+}
+
+#slide_3{
+	width: 100%;
+	height: 30vh;
+
+	background-image: url(../../img/pc.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#slide_4{
+	width: 100%;
+	height: 100vh;
+}
+
