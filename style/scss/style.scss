@@ -48,7 +48,8 @@ body {
 	height: 100vh;
 
 	display: flex;
-	justify-content : center;
+	justify-content : space-between;
+	flex-direction : column;	
 	align-items : center;
 
 	background-image : url(../../img/clavier.JPG);
@@ -57,19 +58,31 @@ body {
 	h1{
 		padding: 30px;
 		margin: 0;
-		margin-top: -70px;
-
-		font-size: 4em;
+		margin-top: 50px;
+		font-size: 3.5em;
 		font-family: 'Sensation';
 		font-weight: lighter;
 
 		color : white;
 		background-color: rgba(255, 255, 255, 0.4);
 		box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-		position : fixed;
 
 		animation-name : apparition;
 		animation-duration : 1s;	
+	}
+
+	h3{
+		padding: 15px;
+		margin-bottom: 50px;
+		font-family: 'Sensation';
+		font-weight: lighter;
+		
+		color : white;
+		background-color: rgba(255, 255, 255, 0.4);
+		box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+
+		animation-name : apparition;
+		animation-duration : 1s;
 	}
 }
 
@@ -79,36 +92,57 @@ body {
 	font-family: 'RobotoL';
 	display: flex;
 	flex-direction : column;
-	justify-content : space-between;
-	background-color: white;
+	align-items : center;
+	justify-content : space-around;
+	background-color: #F5F5F5;
 
-	h2{
-		font-size: 2em;
-		margin-top: 50px;
-		margin-left: 20px;
-		padding-bottom: 20px;
-		width: 50%;
-		color: #CE0000;
-		border-bottom: 1px solid #CE0000;
-		font-family: 'Sensation';
-	}
+	div{
+		width: 90%;
+		box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 
-	p{
-		margin: 20px;
-		font-size: 1.4em;
+		h2{
+			font-size: 2em;
+			// margin-top: 50px;
+			// margin-left: 20px;
+			// padding-bottom: 20px;
+			// width: 50%;
+			// color: #CE0000;
+			// border-bottom: 1px solid #CE0000;
+			font-family: 'Sensation';
+			font-weight: lighter;
+			background-color: #355AFF;
+			color: white;
+			margin: 0;
+			padding: 20px;
+
+		}
+
+		p{
+			// margin: 20px;
+			font-size: 1.4em;
+			background: white;
+			margin: 0;
+ 			color :#424242;
+ 			padding: 20px;
+		}
 	}
+	
 
 	#icons{
 		display : flex;
 		justify-content : space-around;
 		margin-top: 30px;
 		margin-bottom: 100px;
+		background-color: #F5F5F5;
+		box-shadow: none;
 
 		#logo{
 		width: 10%;
 		display: flex;
 		flex-direction : column;
 		align-items : center;
+		box-shadow: none;
+
 
 			&:hover{
 				-webkit-animation-duration: 1s;
@@ -118,12 +152,17 @@ body {
 				-webkit-animation-name: pulse;
 				animation-name: pulse;
 			}
+
+			p{
+				background-color: #F5F5F5;
+			}
 		}
 	}
 	#texte_logo{
 			display: flex;
 			justify-content : space-around;
 			text-align: center;
+			background-color: #F5F5F5;
 		}
 }
 
@@ -138,12 +177,25 @@ body {
 
 #slide_4{
 	width: 100%;
-	background-color: #47ACFF;
+	background-color: #F5F5F5;
+	display: flex;
+	flex-direction : column;
+	align-items : center;
+
+	h2{
+		color : white;
+		background-color: #355AFF;
+		font-family: 'RobotoL';
+		font-size: 3em;
+		font-weight: lighter;
+		padding: 15px;
+		box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	}
 }
 
 .timeline ul {
 	margin-top: 0px;
-	background: #E0E0E0;
+	background: #F5F5F5;
 	padding: 50px 0;
 }
 
@@ -172,46 +224,38 @@ body {
  	position: relative;
  	bottom: 0;
  	width: 400px;
- 	padding: 15px;
- 	background: #27AC84;
- 	color :white;
+ 	background: white;
+ 	color :#424242;
  	font-family: 'RobotoL';
+ 	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 
-.timeline ul li div::before {
- 	content: '';
- 	position: absolute;
- 	bottom: 7px;
- 	width: 0;
- 	height: 0;
- 	border-style: solid;
+.timeline ul li div p{
+ 	padding: 15px;
+ 	margin: 0;
 }
+
+
 
 .timeline ul li:nth-child(odd) div {
 	left: 45px;
 }
 
-.timeline ul li:nth-child(odd) div::before {
- 	left: -15px;
- 	border-width: 8px 16px 8px 0;
- 	border-color: transparent #27AC84 transparent transparent;
-}
+
 
 .timeline ul li:nth-child(even) div {
  	left: -470px;
 }
 
-.timeline ul li:nth-child(even) div::before {
- 	right: -15px;
- 	border-width: 8px 0 8px 16px;
- 	border-color: transparent transparent transparent #27AC84;
-}
-
 time {
  	display: block;
+ 	color: white;
  	font-size: 1.2rem;
+ 	padding: 15px;
  	font-weight: bold;
- 	margin-bottom: 8px;
+ 	background-color: #355AFF;
+ 	display: flex;
+ 	justify-content : space-between;
 }
 
 /* EFFECTS
@@ -222,7 +266,7 @@ time {
 }
 
 .timeline ul li.in-view::after {
-	background: #27AC84;
+	background: #355AFF;
 }
 
 .timeline ul li div {

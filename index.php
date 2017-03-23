@@ -12,7 +12,12 @@
 </head>
 <body>
 	<div id="slide_1" data-stellar-background-ratio="0.5">
-		<h1 data-stellar-ratio="0.5">Martin Dagostino</h1>
+		<div data-stellar-ratio="0.5">
+			<h1>Bonjour, je suis Martin Dagostino</h1>
+		</div>
+		<div data-stellar-ratio="0.5" >
+			<h3>Développeur Web HTML / CSS / JS / PHP</h3>
+		</div>
 	</div>
 
 	<div id="slide_2" data-stellar-background-ratio="1">
@@ -70,30 +75,31 @@
 	</div>
 
 	<div id="slide_4">
+		<h2>MON PARCOURS</h2>
 		<section class="timeline">
-  <ul>
-    <li>
-      <div>
-        <time>2014</time>Baccalauréat Option Informatique obtenu au Lycée Théodore de Banville à Moulins sur Allier(03000).
-      </div>
-    </li>
-    <li>
-      <div>
-        <time>2015</time> Étudie à l'Université Blaise Pascal à Clermont-Ferrand (63000) en vue d'obtenir une licence Informatique. Quitte le cursus après 2 ans d'études.
-      </div>
-    </li>
-    <li>
-      <div>
-        <time>2016</time>Salarié dans un hôtel Formule 1 à Toulon sur Allier (03000) pendant 3 mois.
-      </div>
-    </li>
-    <li>
-      <div>
-        <time>2017</time>En formation de développement Web par la Grande École du Numérique à Moulins sur Allier (03000).
-      </div>
-    </li>
-  </ul>
-</section>
+		  <ul>
+			<li>
+			  <div>
+				<time>2014 <img src="img/school.svg" alt=""></time><p>Baccalauréat Option Informatique obtenu au Lycée Théodore de Banville à Moulins sur Allier(03000).</p>
+			  </div>
+			</li>
+			<li>
+			  <div>
+				<time>2015 <img src="img/school.svg" alt=""></time> <p>Étudie à l'Université Blaise Pascal à Clermont-Ferrand (63000) en vue d'obtenir une licence Informatique. Quitte le cursus après 2 ans d'études.</p>
+			  </div>
+			</li>
+			<li>
+			  <div>
+				<time>2016 <img src="img/work.svg" alt=""></time><p>Salarié dans un hôtel Formule 1 à Toulon sur Allier (03000) pendant 3 mois.</p>
+			  </div>
+			</li>
+			<li>
+			  <div>
+				<time>2017 <img src="img/school.svg" alt=""></time><p>En formation de développement Web par la Grande École du Numérique à Moulins sur Allier (03000).</p>
+			  </div>
+			</li>
+		  </ul>
+		</section>
 	</div>
 	<script type="text/javascript" src="js/script.js"></script>
 </body>
