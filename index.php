@@ -84,7 +84,11 @@
 		</section>
 	</div>
 
-	<div id="slide_5">
+	<div id="slide_5" data-stellar-background-ratio="0.3">
+		
+	</div>
+
+	<div id="slide_6">
 		<h2>Compétences</h2>
 		<div id="competences_ligne">
 			<div id="competences_ligne_text">

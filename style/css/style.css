@@ -68,30 +68,32 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  background-color: #355AFF; }
+  background-color: #F5F5F5; }
   #slide_2 div {
     width: 90%; }
     #slide_2 div h2 {
       font-size: 2em;
       font-family: 'Sensation';
       font-weight: lighter;
-      border-bottom: 1px solid white;
-      color: white;
+      border-bottom: 2px solid #355AFF;
+      color: black;
       margin: 0;
-      padding: 20px;
+      padding: 15px;
       width: 50%; }
     #slide_2 div p {
       font-size: 1.4em;
-      background: #355AFF;
+      background-color: #F5F5F5;
       margin: 0;
-      color: white;
+      color: black;
       padding: 20px; }
   #slide_2 #icons {
     display: flex;
     justify-content: space-around;
     margin-top: 30px;
     padding: 40px;
-    margin-bottom: 100px; }
+    margin-bottom: 100px;
+    background-color: #355AFF;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
     #slide_2 #icons #logo {
       width: 10%;
       display: flex;
@@ -229,6 +231,13 @@ time {
   opacity: 1; }
 
 #slide_5 {
+  background-image: url(../../img/montagne.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 40vh;
+  width: 100%; }
+
+#slide_6 {
   height: 100vh;
   width: 100%;
   display: flex;
@@ -236,7 +245,7 @@ time {
   align-items: center;
   flex-direction: column;
   background-color: #F5F5F5; }
-  #slide_5 h2 {
+  #slide_6 h2 {
     color: white;
     background-color: #355AFF;
     font-family: 'RobotoL';
@@ -246,7 +255,7 @@ time {
     padding: 15px;
     text-align: center;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
-  #slide_5 #competences_ligne {
+  #slide_6 #competences_ligne {
     display: flex;
     width: 50%;
     color: white;
@@ -258,12 +267,12 @@ time {
     height: 10vh;
     align-items: center;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
-    #slide_5 #competences_ligne #competences_ligne_text {
+    #slide_6 #competences_ligne #competences_ligne_text {
       width: 20%;
       font-size: 2em;
       font-family: 'RobotoL';
       padding-left: 10px;
       vertical-align: center;
       color: #355AFF; }
-    #slide_5 #competences_ligne img {
+    #slide_6 #competences_ligne img {
       width: 10%; }
