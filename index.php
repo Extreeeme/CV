@@ -13,10 +13,16 @@
 <body>
 	<div id="slide_1" data-stellar-background-ratio="0.5">
 		<div data-stellar-ratio="0.5">
-			<h1>Bonjour, je suis Martin Dagostino</h1>
+			<h1>Bonjour, je suis <span id="nom">Martin Dagostino</span></h1>
 		</div>
 		<div data-stellar-ratio="0.5" >
 			<h3>Développeur Web HTML / CSS / JS / PHP</h3>
+		</div>
+		<div id="citationBloc" >
+			<blockquote id="quote">
+				<p>On considère que les neuf dixièmes du code correspondent à environ 90% du temps de développement. Les 10% restant correspondent également à 90% du temps de développement.</p>
+				<small>Tom Cargill<cite title="Source Title"> Mercredi 25 février 2009</cite></small>
+			</blockquote>
 		</div>
 	</div>
 
@@ -25,34 +31,13 @@
 			<h2>Enchanté je me présente,</h2>
 			<p>Passioné et perfectionniste, mon parcours m'a amené à faire de mon hobbie mon travail, sortant du parcours de l'Université sans diplôme, j'ai suivi une formation de développeur Web qui m'a apporté beaucoup de compétences et de savoir faire dans le domaine du web.</p>
 		</div>
-		<div id="icons">
-			<div id="logo">
-				<img id="img" src="img/git.png" alt="">
-			</div>
 
-			<div id="logo">
-				<img id="img2" src="img/html.png" alt="">
-			</div>
-
-			<div id="logo">
-				<img id="img3" src="img/js.png" alt="">
-			</div>
-
-			<div id="logo">
-				<img id="img4" src="img/sql.png" alt="">
-			</div>
-
-			<div id="logo">
-				<img id="img5" src="img/php.png" alt="">
-			</div>
-
-			<div id="logo">
-				<img id="img6" src="img/css.png" alt="">
-			</div>
+		<div id="profil">
+			<img src="img/profil.png" alt="">
 		</div>
 	</div>
 
-	<div id="slide_3" data-stellar-background-ratio="0.3">
+	<div id="slide_3" data-stellar-background-ratio="0.5">
 		
 	</div>
 
@@ -84,70 +69,47 @@
 		</section>
 	</div>
 
-	<div id="slide_5" data-stellar-background-ratio="0.3">
+	<div id="slide_5" data-stellar-background-ratio="0.5">
 		
 	</div>
 
 	<div id="slide_6">
-		<h2>Compétences</h2>
-		<div id="competences_ligne">
-			<div id="competences_ligne_text">
-				<p>HTML</p>
+		<h2>COMPÉTENCES</h2>
+		<div id="barres">
+			<div id="barres_contenu">
+				<div class="progress">
+		  			<div class="determinate" style="width: 100%"><p>HTML</p></div>
+				</div>
 			</div>
-			<div id="competences_ligne_star">
-				<img src="img/star_full.png" alt="">
-				<img src="img/star_full.png" alt="">
-				<img src="img/star_full.png" alt="">
-				<img src="img/star_full.png" alt="">
-				<img src="img/star_full.png" alt="">
+			<div id="barres_contenu">
+				<div class="progress">
+		  			<div class="determinate" style="width: 90%"><p>CSS</p></div>
+				</div>
 			</div>
-		</div>
-		<div id="competences_ligne">
-			<div id="competences_ligne_text">
-				<p>CSS</p>
+			<div id="barres_contenu">
+				<div class="progress">
+		  			<div class="determinate" style="width: 90%"><p>SCSS</p></div>
+				</div>
 			</div>
-			<div id="competences_ligne_star">
-				<img src="img/star_full.png" alt="">
-				<img src="img/star_full.png" alt="">
-				<img src="img/star_full.png" alt="">
-				<img src="img/star_full.png" alt="">
-				<img src="img/star.png" alt="">
+			<div id="barres_contenu">
+				<div class="progress">
+		  			<div class="determinate" style="width: 60%"><p>JS</p></div>
+				</div>
 			</div>
-		</div>
-		<div id="competences_ligne">
-			<div id="competences_ligne_text">
-				<p>PHP</p>
+			<div id="barres_contenu">
+				<div class="progress">
+		  			<div class="determinate" style="width: 80%"><p>PHP</p></div>
+				</div>
 			</div>
-			<div id="competences_ligne_star">
-				<img src="img/star_full.png" alt="">
-				<img src="img/star_full.png" alt="">
-				<img src="img/star_full.png" alt="">
-				<img src="img/star_full.png" alt="">
-				<img src="img/star.png" alt="">
+			<div id="barres_contenu">
+				<div class="progress">
+		  			<div class="determinate" style="width: 80%"><p>MySQL</p></div>
+				</div>
 			</div>
-		</div>
-		<div id="competences_ligne">
-			<div id="competences_ligne_text">
-				<p>Javascript</p>
-			</div>
-			<div id="competences_ligne_star">
-				<img src="img/star_full.png" alt="">
-				<img src="img/star_full.png" alt="">
-				<img src="img/star_full.png" alt="">
-				<img src="img/star.png" alt="">
-				<img src="img/star.png" alt="">
-			</div>
-		</div>
-		<div id="competences_ligne">
-			<div id="competences_ligne_text">
-				<p>MySQL</p>
-			</div>
-			<div id="competences_ligne_star">
-				<img src="img/star_full.png" alt="">
-				<img src="img/star_full.png" alt="">
-				<img src="img/star_full.png" alt="">
-				<img src="img/star_full.png" alt="">
-				<img src="img/star.png" alt="">
+			<div id="barres_contenu">
+				<div class="progress">
+		  			<div class="determinate" style="width: 100%"><p>Git</p></div>
+				</div>
 			</div>
 		</div>
 	</div>
