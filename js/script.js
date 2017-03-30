@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-$.stellar({responsive:true, hideDistantElements: false,horizontalScrolling:false});
-
-=======
 $.stellar({
   hideDistantElements: false
 });
@@ -107,4 +103,3 @@ $.stellar({
   window.addEventListener("scroll", callbackFunc);
 
 })();
->>>>>>> master
