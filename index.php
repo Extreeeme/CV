@@ -28,8 +28,7 @@
 
 	<div id="slide_2" data-stellar-background-ratio="1">
 		<div>
-			<h2>Enchanté je me présente,</h2>
-			<p>Passioné et perfectionniste, mon parcours m'a amené à faire de mon hobbie mon travail, sortant du parcours de l'Université sans diplôme, j'ai suivi une formation de développeur Web qui m'a apporté beaucoup de compétences et de savoir faire dans le domaine du web.</p>
+			<p>Passioné et perfectionniste, mon parcours m'a amené à faire de mon hobbie mon travail, sortant du parcours de l'Université sans diplôme, j'ai suivi une formation de développeur Web qui m'a apporté beaucoup de compétences et de savoir faire dans le domaine du web. J'ai ainsi obtenu des méthodes d'apprentissages efficaces pour m'aider à développer mes connaissances.</p>
 		</div>
 
 		<div id="profil">
@@ -112,6 +111,23 @@
 				</div>
 			</div>
 		</div>
+	</div>
+
+	<div id="slide_7" data-stellar-background-ratio="0.5">
+		<div class="gauche">
+			<div id="icons">
+				<a href="mailto:martindcontact@gmail.com"><img src="img/mail.png" alt=""></a>
+				<a href="https://twitter.com/Extreme033?lang=fr"><img src="img/twitter.png" alt=""></a>
+				<a href="https://www.facebook.com/profile.php?id=100004870004942"><img src="img/facebook.png" alt=""></a>
+				<a href="#"><img src="img/linkedin.png" alt=""></a>
+			</div>
+		</div>
+
+		<div class="droite">
+			<h2>ME CONTACTER</h2>
+		</div>
+
+		
 	</div>
 	<script type="text/javascript" src="js/script.js"></script>
 </body>
