@@ -236,7 +236,6 @@ time {
   background: #F4AE59; }
 
 .timeline ul li div {
-  visibility: hidden;
   opacity: 0;
   transition: all .5s ease-in-out; }
 
@@ -377,3 +376,316 @@ time {
       padding-left: 20px;
       padding-right: 20px;
       box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
+
+@media (max-width: 768px) {
+  body {
+    width: 100%;
+    overflow-x: hidden; }
+
+  #slide_1 {
+    width: 100%;
+    height: 91vh;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    background-image: url(../../img/clavier.JPG);
+    background-size: cover; }
+    #slide_1 h1 {
+      margin: 0;
+      font-size: 1.5em;
+      font-family: 'Sensation';
+      font-weight: lighter;
+      color: white;
+      animation-name: apparition;
+      animation-duration: 1s; }
+    #slide_1 h3 {
+      padding: 15px;
+      padding-right: 30px;
+      margin-bottom: 50px;
+      font-family: 'Sensation';
+      font-weight: lighter;
+      color: white;
+      font-size: 1em;
+      animation-name: apparition;
+      animation-duration: 1s; }
+    #slide_1 #nom {
+      color: #FFAE00; }
+    #slide_1 #citationBloc {
+      width: 100%;
+      margin: 0; }
+    #slide_1 #quote {
+      background-color: rgba(255, 255, 255, 0.2);
+      border-left: 5px solid #4e5d6c;
+      color: white;
+      width: 97%;
+      padding: 10px;
+      padding-left: 5px;
+      padding-right: 0px;
+      margin: 0;
+      font-family: 'Sensation';
+      font-weight: lighter;
+      font-size: 1em; }
+
+  #slide_2 {
+    width: 100%;
+    height: 100vh;
+    font-family: 'RobotoL';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    background-color: #F5F5F5; }
+    #slide_2 #profil {
+      width: 45%;
+      margin-bottom: 100px; }
+      #slide_2 #profil img {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
+    #slide_2 div {
+      width: 90%; }
+      #slide_2 div h2 {
+        font-size: 1.5em;
+        font-family: 'Sensation';
+        font-weight: lighter;
+        border-bottom: 2px solid #217295;
+        color: black;
+        margin: 0;
+        margin-top: 30px;
+        padding: 15px;
+        width: 90%; }
+      #slide_2 div p {
+        font-size: 1.2em;
+        background-color: #F5F5F5;
+        margin: 0;
+        color: black;
+        padding: 0;
+        padding-top: 20px;
+        padding-bottom: 20px; }
+
+  #slide_4 {
+    width: 100%;
+    background-color: #F5F5F5;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    #slide_4 h2 {
+      color: white;
+      background-color: #F4AE59;
+      font-family: 'RobotoL';
+      font-size: 2em;
+      width: 100%;
+      text-align: center;
+      font-weight: lighter;
+      padding: 15px;
+      padding-left: 0;
+      padding-right: 0;
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
+
+  .timeline ul {
+    margin-top: 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background: #F5F5F5;
+    padding: 0px; }
+
+  .timeline ul li {
+    list-style-type: none;
+    position: static;
+    width: 100%;
+    margin: 0;
+    margin-left: 0px;
+    padding-top: 50px;
+    background: #F5F5F5; }
+
+  .timeline ul li div {
+    width: 100%; }
+
+  .timeline ul li div {
+    position: static;
+    background: white;
+    color: #424242;
+    font-family: 'RobotoL';
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
+
+  .timeline ul li div p {
+    padding: 15px;
+    margin: 0; }
+
+  .timeline ul li:nth-child(odd) div {
+    left: 0px; }
+
+  .timeline ul li:nth-child(even) div {
+    left: 0%; }
+
+  time {
+    display: block;
+    color: white;
+    font-size: 1.2rem;
+    padding: 15px;
+    font-weight: bold;
+    background-color: #F4AE59;
+    display: flex;
+    justify-content: space-between; }
+
+  /* EFFECTS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  .timeline ul li::after {
+    display: none; }
+
+  .timeline ul li.in-view::after {
+    display: none; }
+
+  .timeline ul li div {
+    opacity: 1;
+    position: static; }
+
+  .timeline ul li:nth-child(odd) div {
+    transform: translate3d(0px, 0, 0); }
+
+  .timeline ul li:nth-child(even) div {
+    transform: translate3d(0px, 0, 0); }
+
+  #slide_6 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    background-color: #F5F5F5; }
+    #slide_6 h2 {
+      color: white;
+      background-color: #217295;
+      font-family: 'Sensation';
+      font-size: 1.5em;
+      width: 100%;
+      font-weight: lighter;
+      padding: 15px;
+      padding-left: 0px;
+      padding-right: 0px;
+      text-align: center;
+      margin-bottom: 30px;
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
+    #slide_6 #barres {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      width: 100%; }
+      #slide_6 #barres #barres_contenu {
+        width: 90%; }
+      #slide_6 #barres .progress {
+        display: block;
+        opacity: 1;
+        left: 0px;
+        transition: all 1s ease-in-out;
+        visibility: visible;
+        position: relative;
+        height: 25px;
+        width: 100%;
+        background-color: #91B9FF;
+        border-radius: 2px;
+        background-clip: padding-box;
+        margin: 0.5rem 0 1rem 0;
+        margin-left: 20px;
+        margin-bottom: 20px;
+        overflow: hidden;
+        display: flex;
+        padding: 0;
+        justify-content: flex-start;
+        align-items: center;
+        align-content: center; }
+        #slide_6 #barres .progress p {
+          margin: 0;
+          padding: 0;
+          padding-top: 3px;
+          text-align: center;
+          background-color: #0A354E;
+          width: 5em;
+          color: white;
+          height: 25px;
+          font-family: 'Roboto'; }
+      #slide_6 #barres .progress .determinate {
+        position: absolute;
+        background-color: inherit;
+        top: 0;
+        bottom: 0;
+        background-color: #175A7A;
+        transition: width .3s linear; }
+
+  #slide_3 {
+    width: 100%;
+    height: 20vh;
+    background-image: url(../../img/pc.jpg);
+    background-size: cover;
+    background-repeat: no-repeat; }
+
+  #slide_5 {
+    background-image: url(../../img/montagne.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 20vh;
+    width: 100%; }
+
+  #slide_7 {
+    height: 100vh;
+    width: 100%;
+    background-image: url("../../img/slide7.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 5px;
+    display: flex;
+    justify-content: space-between; }
+    #slide_7 #icons {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      align-content: center;
+      text-align: center; }
+    #slide_7 a {
+      width: 90%; }
+    #slide_7 img {
+      width: 70%;
+      margin-bottom: 10px;
+      margin-top: 10px;
+      transition: 0.5s; }
+      #slide_7 img:hover {
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        -o-transform: scale(1.1);
+        transform: scale(1.1);
+        transition: 0.5s; }
+    #slide_7 .gauche {
+      height: 100vh;
+      width: 35%;
+      background-color: white;
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+    #slide_7 .droite {
+      margin-right: 20px;
+      display: flex;
+      justify-content: center;
+      align-content: center; }
+      #slide_7 .droite h2 {
+        color: #53BB62;
+        background-color: white;
+        font-family: 'Sensation';
+        font-weight: lighter;
+        align-self: center;
+        font-size: 1.3em;
+        padding: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); } }
