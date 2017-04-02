@@ -333,12 +333,78 @@ time {
 
 #slide_6 {
     width: 100%;
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding-bottom: 50px;
     background-color: #F5F5F5;
+
+    a {
+        box-sizing: border-box;
+        text-decoration: none;
+        background: none;
+        border: 0;
+        color: black;
+        font-size: 2em;
+        margin: 10px;
+        padding: 20px 20px;
+        text-align: center;
+        position: relative;
+        vertical-align: middle;
+        font-family: 'RobotoL';
+
+        &::before, &::after {
+            box-sizing: border-box;
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .oc {
+        transition: color 0.25s;
+
+        &::before,
+        &::after {
+            border: 2px solid transparent;
+            width: 0;
+            height: 0;
+        }
+
+        &::before {
+            top: 0;
+            left: 0;
+        }
+
+        &::after {
+            bottom: 0;
+            right: 0;
+        }
+
+        &:hover {
+            color: #217295;
+        }
+
+        &:hover::before,
+        &:hover::after {
+            width: 100%;
+            height: 100%;
+        }
+
+        &:hover::before {
+            border-top-color: #217295;
+            border-right-color: #217295;
+            transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
+        }
+
+        &:hover::after {
+            border-bottom-color: #217295;
+            border-left-color: #217295;
+            transition: border-color 0s ease-out 0.5s,  width 0.25s ease-out 0.5s,  height 0.25s ease-out 0.75s;
+        }
+    }
 
     h2 {
         color: white;
@@ -355,6 +421,7 @@ time {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
+        align-items: center;
         width: 100%;
 
         #barres_contenu {
@@ -419,7 +486,6 @@ time {
     width: 100%;
     background-image: url("../../img/slide7.png");
     background-size: cover;
-    background-repeat: no-repeat;
     padding-top: 5px;
     display: flex;
     justify-content: space-between;
@@ -481,10 +547,9 @@ time {
     }
 }
 
-@media (max-width: 768px) {
-
-    body{
-        width: 100%;
+@media screen and (max-width: 768px) {
+    body {
+        width: auto;
         overflow-x: hidden;
     }
 
@@ -700,12 +765,15 @@ time {
 
     #slide_6 {
         width: 100%;
-        height: 100vh;
         display: flex;
         justify-content: flex-start;
         align-items: center;
         flex-direction: column;
         background-color: #F5F5F5;
+        
+        a{
+            font-size: 1em;
+        }
 
         h2 {
             color: white;
@@ -725,7 +793,7 @@ time {
         #barres {
             display: flex;
             flex-direction: column;
-            flex-wrap: wrap;
+            align-items: center;
             width: 100%;
 
             #barres_contenu {
@@ -735,7 +803,7 @@ time {
             .progress {
                 display: block;
                 opacity: 1;
-                left: 0px;
+                left: -20px;
                 transition: all 1s ease-in-out;
                 visibility: visible;
                 position: relative;
@@ -849,7 +917,6 @@ time {
             display: flex;
             justify-content: center;
             align-content: center;
-
 
             h2 {
                 color: #53BB62;
