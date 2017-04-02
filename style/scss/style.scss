@@ -546,7 +546,19 @@ time {
         }
     }
 }
+@media screen and (orientation: landscape) and (min-width: 1920px) {
+    #slide_1 {
 
+        h1 {
+            padding-right: 10em;
+        }
+
+        h3 {
+            padding-right:20em;
+        }
+    }
+
+}
 @media screen and (max-width: 768px) {
     body {
         width: auto;
