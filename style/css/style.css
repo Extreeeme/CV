@@ -389,7 +389,7 @@ time {
   #slide_7 a {
     width: 45%; }
   #slide_7 img {
-    width: 70%;
+    width: 50%;
     margin-bottom: 10px;
     margin-top: 10px;
     transition: 0.5s; }
@@ -722,6 +722,7 @@ time {
       box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
       display: flex;
       flex-direction: column;
+      flex-wrap: wrap;
       justify-content: center; }
     #slide_7 .droite {
       margin-right: 20px;
