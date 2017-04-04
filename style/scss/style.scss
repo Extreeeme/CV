@@ -88,7 +88,11 @@ body {
     width: 100%;
     height: 100vh;
     font-family: 'RobotoL';
-    display: flex;
+    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: -webkit-flex;     /* NEW - Chrome */
+    display:flex;
     flex-direction: column;
     align-items: center;
     align-content: center;
@@ -136,7 +140,11 @@ body {
     }
 
     #icons {
-        display: flex;
+        display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+        display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+        display: -ms-flexbox;      /* TWEENER - IE 10 */
+        display: -webkit-flex;     /* NEW - Chrome */
+        display:flex;
         flex-direction: row;
         flex-wrap: wrap;
         width: 80%;
@@ -149,7 +157,11 @@ body {
 
         #logo {
             width: 5%;
-            display: flex;
+            display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+            display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+            display: -ms-flexbox;      /* TWEENER - IE 10 */
+            display: -webkit-flex;     /* NEW - Chrome */
+            display:flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
@@ -217,7 +229,11 @@ body {
 #slide_4 {
     width: 100%;
     background-color: #F5F5F5;
-    display: flex;
+    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: -webkit-flex;     /* NEW - Chrome */
+    display:flex;
     flex-direction: column;
     align-items: center;
 
@@ -333,7 +349,11 @@ time {
 
 #slide_6 {
     width: 100%;
-    display: flex;
+    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: -webkit-flex;     /* NEW - Chrome */
+    display:flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -419,6 +439,10 @@ time {
 
     #barres {
         display: flex;
+        display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+        display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+        display: -ms-flexbox;      /* TWEENER - IE 10 */
+        display: -webkit-flex; 
         flex-direction: column;
         flex-wrap: wrap;
         align-items: center;
@@ -445,6 +469,10 @@ time {
             margin-bottom: 50px;
             overflow: hidden;
             display: flex;
+            display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+            display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+            display: -ms-flexbox;      /* TWEENER - IE 10 */
+            display: -webkit-flex;  
             padding: 0;
             justify-content: flex-start;
             align-items: center;
@@ -487,12 +515,22 @@ time {
     background-image: url("../../img/slide7.png");
     background-size: cover;
     padding-top: 5px;
-    display: flex;
+    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: -webkit-flex;     /* NEW - Chrome */
+    display:flex;
     justify-content: space-between;
 
     #icons {
-        display: flex;
+        display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+        display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+        display: -ms-flexbox;      /* TWEENER - IE 10 */
+        display: -webkit-flex;     /* NEW - Chrome */
+        display:flex;
         flex-direction: column;
+        -webkit-flex-wrap: wrap;
+        -moz-flex-wrap : wrap;
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
@@ -525,7 +563,11 @@ time {
         width: 35%;
         background-color: white;
         box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-        display: flex;
+        display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+        display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+        display: -ms-flexbox;      /* TWEENER - IE 10 */
+        display: -webkit-flex;     /* NEW - Chrome */
+        display:flex;
         flex-direction: column;
     }
 
