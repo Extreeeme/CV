@@ -305,6 +305,23 @@ time {
   flex-direction: column;
   padding-bottom: 50px;
   background-color: #F5F5F5; }
+  #slide_6 #applications {
+    display: flex;
+    flex-direction: line;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 50%; }
+    #slide_6 #applications .application {
+      width: 40%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin: 10px;
+      align-items: center; }
+      #slide_6 #applications .application p {
+        font-family: 'RobotoL';
+        font-size: 2em; }
   #slide_6 a {
     box-sizing: border-box;
     text-decoration: none;
@@ -407,7 +424,7 @@ time {
         padding-top: 3px;
         text-align: center;
         background-color: #0A354E;
-        width: 5em;
+        width: 6em;
         color: white;
         height: 25px;
         font-family: 'Roboto'; }
